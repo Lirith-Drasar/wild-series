@@ -15,8 +15,9 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_index', '_controller' => 'App\\Controller\\DefaultController::index'], null, null, null, false, false, null]],
         '/wild' => [
+            [['_route' => 'wild_indexwild_index', '_controller' => 'App\\Controller\\WildController::index'], null, null, null, true, false, null],
+            [['_route' => 'wild_show', '_controller' => 'App\\Controller\\WildController::show'], null, null, null, true, false, null],
             [['_route' => 'wild_index', '_controller' => 'App\\Controller\\WildController::index'], null, null, null, false, false, null],
-            [['_route' => 'wild_show_index', '_controller' => 'App\\Controller\\WildController::index'], null, null, null, true, false, null],
         ],
     ],
     [ // $regexpList
@@ -48,7 +49,7 @@ return [
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
         197 => [
-            [['_route' => 'wild_show', 'slug' => 'Aucune série sélectionnée, veuillez choisir une série', '_controller' => 'App\\Controller\\WildController::show'], ['slug'], null, null, false, true, null],
+            [['_route' => 'wild_indexwild_show', 'slug' => null, '_controller' => 'App\\Controller\\WildController::show'], ['slug'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

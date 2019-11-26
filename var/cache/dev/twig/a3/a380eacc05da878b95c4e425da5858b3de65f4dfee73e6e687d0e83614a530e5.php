@@ -77,8 +77,12 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Ma séléction
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/wild/show/ma-superbe-serie\">ma-superbe-serie </a>
-                    <a class=\"dropdown-item\" href=\"/wild/show/house-of-cards\">house-of-cards</a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">The Haunting Of Hill House </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">American Horror Story  </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Love Death And Robots </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Penny Dreadful </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Fear The Walking Dead </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
@@ -129,8 +133,12 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Ma séléction
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/wild/show/ma-superbe-serie\">ma-superbe-serie </a>
-                    <a class=\"dropdown-item\" href=\"/wild/show/house-of-cards\">house-of-cards</a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">The Haunting Of Hill House </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">American Horror Story  </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Love Death And Robots </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Penny Dreadful </a>
+                    <a class=\"dropdown-item\" href=\"/wild/\">Fear The Walking Dead </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
@@ -145,6 +153,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
             </form>
         </div>
     </nav>
-{% endblock %}", "/wild/navbar.html.twig", "/home/lirith-drasar/Bureau/Projet/Wild-Series/templates/wild/navbar.html.twig");
+{% endblock %}", "/wild/navbar.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/navbar.html.twig");
     }
 }

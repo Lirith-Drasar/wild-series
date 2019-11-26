@@ -13,7 +13,7 @@ return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
                 '/wild',
             ],
             'name' => [
-                'wild_index',
+                'wild_',
             ],
         ],
     ],

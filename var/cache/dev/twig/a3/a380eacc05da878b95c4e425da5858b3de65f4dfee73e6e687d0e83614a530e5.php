@@ -70,19 +70,19 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         echo "\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/show/slogpage\">Slogpage</a> 
+                    <a class=\"nav-link\" href=\"/wild/\">Slogpage</a> 
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Ma séléction
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/wild/\">Walking Dead </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">The Haunting Of Hill House </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">American Horror Story  </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">Love Death And Robots </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">Penny Dreadful </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">Fear The Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/walking-dead\">Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/the-haunting-of-hill-house\">The Haunting Of Hill House </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/american-horror-story\">American Horror Story  </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/love-death-and-robots\">Love Death And Robots </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/penny-dreadful\">Penny Dreadful </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/fear-the-walking-dead\">Fear The Walking Dead </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
@@ -126,19 +126,19 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"nav-link\" href=\"{{ path('app_index') }}\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/show/slogpage\">Slogpage</a> 
+                    <a class=\"nav-link\" href=\"/wild/\">Slogpage</a> 
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Ma séléction
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/wild/\">Walking Dead </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">The Haunting Of Hill House </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">American Horror Story  </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">Love Death And Robots </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">Penny Dreadful </a>
-                    <a class=\"dropdown-item\" href=\"/wild/\">Fear The Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/walking-dead\">Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/the-haunting-of-hill-house\">The Haunting Of Hill House </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/american-horror-story\">American Horror Story  </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/love-death-and-robots\">Love Death And Robots </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/penny-dreadful\">Penny Dreadful </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/fear-the-walking-dead\">Fear The Walking Dead </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>

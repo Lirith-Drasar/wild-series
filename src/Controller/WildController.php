@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Program;
 
 /**
- * @Route("/wild", name="wild_index")
+ * @Route("/wild", name="wild_")
  */
 Class WildController extends AbstractController
 {
@@ -41,7 +41,7 @@ Class WildController extends AbstractController
     * Getting a program with a formatted slug for title
     *
     * @param string $slug The slugger
-    * @Route("/show/{slug<^[a-z0-9-]+$>}", defaults={"slug" = null}, name="wild_show")
+    * @Route("/show/{slug<^[a-z0-9-]+$>}", defaults={"slug" = null}, name="show")
     * @return Response
     */
     public function show(?string $slug):Response

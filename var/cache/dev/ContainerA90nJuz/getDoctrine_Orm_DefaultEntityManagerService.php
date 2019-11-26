@@ -46,10 +46,8 @@ $a->setQuoteStrategy(new \Doctrine\ORM\Mapping\DefaultQuoteStrategy());
 $a->setEntityListenerResolver(new \Doctrine\Bundle\DoctrineBundle\Mapping\ContainerEntityListenerResolver($this));
 $a->setRepositoryFactory(new \Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory(new \Symfony\Component\DependencyInjection\Argument\ServiceLocator($this->getService, [
     'App\\Repository\\CategoryRepository' => ['privates', 'App\\Repository\\CategoryRepository', 'getCategoryRepositoryService.php', true],
-    'App\\Repository\\ProgramRepository' => ['privates', 'App\\Repository\\ProgramRepository', 'getProgramRepositoryService.php', true],
 ], [
     'App\\Repository\\CategoryRepository' => '?',
-    'App\\Repository\\ProgramRepository' => '?',
 ])));
 
 $this->services['doctrine.orm.default_entity_manager'] = $instance = \Doctrine\ORM\EntityManager::create(($this->services['doctrine.dbal.default_connection'] ?? $this->load('getDoctrine_Dbal_DefaultConnectionService.php')), $a);

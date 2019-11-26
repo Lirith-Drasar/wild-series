@@ -87,6 +87,6 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
     <body>
         <h1>{{ website }} index</h1>
     </body>
-</html>", "wild/index.html.twig", "/home/sheitak/Wild Series/wild-series/templates/wild/index.html.twig");
+</html>", "wild/index.html.twig", "/home/lirith-drasar/Bureau/Projet/Wild-Series/templates/wild/index.html.twig");
     }
 }

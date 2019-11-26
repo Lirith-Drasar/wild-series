@@ -1,13 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    background-color: lightpink;
+    background-image:url(../../image/fondecran.jpeg);
+    color: white;
 }
 
-$theme-colors: (
-        "primary": #61affc,
-        "secondary": #fcb161
-);
-
-$theme-colors : ( "custom-color" : #000000 );
-$theme-colors : ( "custom-color" : #FFFFFF );

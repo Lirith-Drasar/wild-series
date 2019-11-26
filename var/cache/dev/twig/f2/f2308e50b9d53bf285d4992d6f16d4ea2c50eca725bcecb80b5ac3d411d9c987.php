@@ -72,19 +72,19 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
     <title>Document</title>
 </head>
     <body>
-        <a href=\"";
+        <h1>";
         // line 11
+        echo twig_escape_filter($this->env, (isset($context["slug"]) || array_key_exists("slug", $context) ? $context["slug"] : (function () { throw new RuntimeError('Variable "slug" does not exist.', 11, $this->source); })()), "html", null, true);
+        echo ".</h1>
+        <a href=\"";
+        // line 12
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_show", ["slug" => "ma-superbe-serie"]);
         echo "\">Voici la série Ma Superbe Série.</a>
         <br>
         <a href=\"";
-        // line 13
+        // line 14
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_show", ["slug" => "house-of-cards"]);
         echo "\">Voici la série House of Cards.</a>
-        <h1>";
-        // line 14
-        echo twig_escape_filter($this->env, (isset($context["slug"]) || array_key_exists("slug", $context) ? $context["slug"] : (function () { throw new RuntimeError('Variable "slug" does not exist.', 14, $this->source); })()), "html", null, true);
-        echo ".</h1>
     </body>
 </html>
 ";
@@ -108,7 +108,7 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
 
     public function getDebugInfo()
     {
-        return array (  86 => 14,  82 => 13,  77 => 11,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  86 => 14,  81 => 12,  77 => 11,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -123,12 +123,12 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
     <title>Document</title>
 </head>
     <body>
+        <h1>{{ slug }}.</h1>
         <a href=\"{{ path('wild_show', {'slug':'ma-superbe-serie'}) }}\">Voici la série Ma Superbe Série.</a>
         <br>
         <a href=\"{{ path('wild_show', {'slug':'house-of-cards'}) }}\">Voici la série House of Cards.</a>
-        <h1>{{ slug }}.</h1>
     </body>
 </html>
-{% endblock %}", "wild/show.html.twig", "/home/sheitak/Wild Series/wild-series/templates/wild/show.html.twig");
+{% endblock %}", "wild/show.html.twig", "/home/lirith-drasar/Bureau/Projet/Wild-Series/templates/wild/show.html.twig");
     }
 }

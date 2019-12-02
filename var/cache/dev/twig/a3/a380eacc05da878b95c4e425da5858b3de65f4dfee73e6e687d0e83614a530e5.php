@@ -70,7 +70,10 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         echo "\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/\">Slogpage</a> 
+                    <a class=\"nav-link\" href=\"/wild/category/horreur\">Categorie Horreur</a> 
+                </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/wild/\">Liste séries et films</a> 
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -86,9 +89,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
                 </li>
             </ul>
             <form class=\"form-inline my-2 my-lg-0\">
@@ -126,7 +126,10 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"nav-link\" href=\"{{ path('app_index') }}\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/\">Slogpage</a> 
+                    <a class=\"nav-link\" href=\"/wild/category/horreur\">Categorie Horreur</a> 
+                </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/wild/\">Liste séries et films</a> 
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -142,9 +145,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
                 </li>
             </ul>
             <form class=\"form-inline my-2 my-lg-0\">

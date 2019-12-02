@@ -10,10 +10,10 @@ return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
     [
         'Symfony\\Component\\Routing\\Annotation\\Route' => [
             'path' => [
-                '/show/{slug<^[a-z0-9-]+$>}',
+                '/wild/show/{slug<[a-z0-9-]+>}',
             ],
             'name' => [
-                'show',
+                'wild_show',
             ],
             'defaults' => [
                 [

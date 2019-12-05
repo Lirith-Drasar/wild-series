@@ -69,6 +69,6 @@ class __TwigTemplate_88e00571dff1dfbd7f8d221b4e48a7d91e02464bce64932f73aa38442e4
     public function getSourceContext()
     {
         return new Source("{{ { 'error': { 'code': status_code, 'message': status_text, 'exception': exception.toarray } }|json_encode|raw }}
-", "@Twig/Exception/exception.json.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/exception.json.twig");
+", "@Twig/Exception/exception.json.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/exception.json.twig");
     }
 }

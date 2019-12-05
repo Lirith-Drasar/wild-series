@@ -81,6 +81,6 @@ class __TwigTemplate_64157a70fb8ddba2ea6518376a74e59244cfba02fe930055a8f86a54ab1
     public function getSourceContext()
     {
         return new Source("{% block panel '' %}
-", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
+", "@WebProfiler/Profiler/ajax_layout.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
     }
 }

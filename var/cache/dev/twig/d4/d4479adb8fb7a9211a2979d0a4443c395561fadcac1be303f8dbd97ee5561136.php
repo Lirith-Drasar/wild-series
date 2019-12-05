@@ -1099,6 +1099,6 @@ $context["log"], "priorityName", [], "any", false, false, false, 206) == "WARNIN
         {% endif %}
     {% endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/logger.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/logger.html.twig");
+", "@WebProfiler/Collector/logger.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/logger.html.twig");
     }
 }

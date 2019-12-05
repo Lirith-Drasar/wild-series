@@ -318,6 +318,6 @@ class __TwigTemplate_523b6cb81cb7a86355ef508b1e9ed0dd8144179f3bca10c7d70b89ef8f1
 .timeline-graph .{{ classnames['controller.argument_value_resolver']|raw }} .timeline-period {
     fill: var(--color-controller-argument-value-resolver);
 }
-", "@WebProfiler/Collector/time.css.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
+", "@WebProfiler/Collector/time.css.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
     }
 }

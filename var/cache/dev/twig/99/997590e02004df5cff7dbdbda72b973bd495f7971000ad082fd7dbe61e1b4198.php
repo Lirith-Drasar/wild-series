@@ -97,6 +97,6 @@ class __TwigTemplate_ae3a430f6229433f5e70dc7757d912973699e919b2d78b3294a9a23bd8c
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
     }
 }

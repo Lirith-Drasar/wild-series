@@ -65,7 +65,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    <h1>Toutes les séries de la table program : </h1>
+        echo "    <h1>All TV shows: </h1>
     ";
         // line 5
         $context['_parent'] = $context;
@@ -92,12 +92,12 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 7), "html", null, true);
             echo " / ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 7), "html", null, true);
-            echo " - Catégorie : ";
+            echo " - Category: ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["program"], "category", [], "any", false, false, false, 7), "name", [], "any", false, false, false, 7), "html", null, true);
             echo "</h2>
             <p>";
             // line 8
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "summary", [], "any", false, false, false, 8), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "synopsis", [], "any", false, false, false, 8), "html", null, true);
             echo "</p>
         </div>
     ";
@@ -113,7 +113,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         }
         if (!$context['_iterated']) {
             // line 11
-            echo "        Aucune série trouvée.
+            echo "        No TV show found.
     ";
         }
         $_parent = $context['_parent'];
@@ -123,7 +123,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         echo "    <a href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
         echo "\">
-        Retour à l'accueil
+        Back to home
     </a>
 ";
         
@@ -154,17 +154,17 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         return new Source("{% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Toutes les séries de la table program : </h1>
+    <h1>All TV shows: </h1>
     {% for program in programs %}
         <div>
-            <h2>{{ loop.index }} / {{ program.title }} - Catégorie : {{ program.category.name }}</h2>
-            <p>{{ program.summary }}</p>
+            <h2>{{ loop.index }} / {{ program.title }} - Category: {{ program.category.name }}</h2>
+            <p>{{ program.synopsis }}</p>
         </div>
     {% else %}
-        Aucune série trouvée.
+        No TV show found.
     {% endfor %}
     <a href=\"{{ path('app_index') }}\">
-        Retour à l'accueil
+        Back to home
     </a>
 {% endblock %}", "wild/index.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/index.html.twig");
     }

@@ -95,6 +95,6 @@ class __TwigTemplate_59209ad40ec296773c9256c2d60d60f48bf0d0680cdc9e11d50a15bee39
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

@@ -117,6 +117,6 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
             <h1>{{ welcome }}</h1>
         </body>
     </html>
-{% endblock %}", "wild/home.html.twig", "/home/lirith-drasar/Bureau/Projet/Wild-Series/templates/wild/home.html.twig");
+{% endblock %}", "wild/home.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/home.html.twig");
     }
 }

@@ -135,6 +135,6 @@ class __TwigTemplate_674f635ae8015c8c2129f81bbca820b7fac2db22169bee20629a8072c9a
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/bag.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
+", "@WebProfiler/Profiler/bag.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
     }
 }

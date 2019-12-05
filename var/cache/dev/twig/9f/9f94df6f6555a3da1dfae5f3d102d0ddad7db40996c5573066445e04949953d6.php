@@ -73,6 +73,6 @@ class __TwigTemplate_a15eef5e2ded821dc2e5213e0bc364af682c73b14a3b1304af1e2655b84
     <?php echo \$view['form']->label(\$child, null, ['translation_domain' => \$choice_translation_domain]) ?>
 <?php endforeach ?>
 </div>
-", "@Framework/Form/choice_widget_expanded.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_expanded.html.php");
+", "@Framework/Form/choice_widget_expanded.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget_expanded.html.php");
     }
 }

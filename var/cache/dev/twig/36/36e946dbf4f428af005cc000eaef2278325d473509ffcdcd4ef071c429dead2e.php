@@ -63,6 +63,6 @@ class __TwigTemplate_b629bcdfe7aa03227e1264e2678f8d98aefa0f60c785985e684c0ad8d46
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'button_widget', ['type' => isset(\$type) ? \$type : 'submit']) ?>
-", "@Framework/Form/submit_widget.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/submit_widget.html.php");
+", "@Framework/Form/submit_widget.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/submit_widget.html.php");
     }
 }

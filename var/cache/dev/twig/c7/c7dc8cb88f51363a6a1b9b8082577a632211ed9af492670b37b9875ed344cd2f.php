@@ -69,6 +69,6 @@ class __TwigTemplate_6dffc68e9a30aece8d889ef7898a10dbfbd2b26fdc9496070348b2b7426
     <?php \$attr['data-prototype'] = \$view->escape(\$view['form']->row(\$prototype)) ?>
 <?php endif ?>
 <?php echo \$view['form']->widget(\$form, ['attr' => \$attr]) ?>
-", "@Framework/Form/collection_widget.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/collection_widget.html.php");
+", "@Framework/Form/collection_widget.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/collection_widget.html.php");
     }
 }

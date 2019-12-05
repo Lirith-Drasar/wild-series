@@ -220,6 +220,6 @@ a.doc:hover {
     top: -7em;
     visibility: hidden;
 }
-", "@WebProfiler/Profiler/open.css.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.css.twig");
+", "@WebProfiler/Profiler/open.css.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.css.twig");
     }
 }

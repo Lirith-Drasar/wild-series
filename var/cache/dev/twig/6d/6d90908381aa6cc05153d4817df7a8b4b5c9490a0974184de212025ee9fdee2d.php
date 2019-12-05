@@ -798,6 +798,6 @@ class __TwigTemplate_f8bda12af903d4f4a6e3afcc71f94ae978fe797e9d817964ff74fe6b2e6
     </table>
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/messenger.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
+", "@WebProfiler/Collector/messenger.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
     }
 }

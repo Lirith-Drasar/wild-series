@@ -156,6 +156,6 @@ class __TwigTemplate_5ec923ee3b311756a3bd681d20861955fb8b580c2e51f8795eaceabfd14
     <h2>{{ messages[about].title }}</h2>
     <p>{{ messages[about].message }}</p>
 {% endblock %}
-", "@WebProfiler/Profiler/info.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/info.html.twig");
+", "@WebProfiler/Profiler/info.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/info.html.twig");
     }
 }

@@ -65,6 +65,6 @@ class __TwigTemplate_fdb181abc208595d3179fbd5383995e2b1af7c058ac798b5be4fc0f925d
     {
         return new Source("id=\"<?php echo \$view->escape(\$id) ?>\" name=\"<?php echo \$view->escape(\$full_name) ?>\"<?php if (\$disabled): ?> disabled=\"disabled\"<?php endif ?>
 <?php if (\$required): ?> required=\"required\"<?php endif ?>
-<?php echo \$attr ? ' '.\$view['form']->block(\$form, 'attributes') : '' ?>", "@Framework/Form/widget_attributes.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/widget_attributes.html.php");
+<?php echo \$attr ? ' '.\$view['form']->block(\$form, 'attributes') : '' ?>", "@Framework/Form/widget_attributes.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/widget_attributes.html.php");
     }
 }

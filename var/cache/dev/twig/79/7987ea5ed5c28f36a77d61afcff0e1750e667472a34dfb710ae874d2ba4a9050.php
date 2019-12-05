@@ -79,6 +79,6 @@ class __TwigTemplate_78af8e35f395bbb2167665d5011c2373890f6d2238f91dfca1328d0f38b
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
+", "@Twig/Exception/error.css.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
     }
 }

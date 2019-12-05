@@ -893,6 +893,6 @@ class SvgRenderer {
         return element;
     }
 }
-", "@WebProfiler/Collector/time.js", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
+", "@WebProfiler/Collector/time.js", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.js");
     }
 }

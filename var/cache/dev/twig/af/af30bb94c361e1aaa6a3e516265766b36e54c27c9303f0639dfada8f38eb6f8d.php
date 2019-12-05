@@ -63,6 +63,6 @@ class __TwigTemplate_3e1c3a5cb4f46bcea7aa4b9eb4837bfb0af8bc30952a3239245be052b55
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => isset(\$type) ? \$type : 'hidden']) ?>
-", "@Framework/Form/hidden_widget.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/hidden_widget.html.php");
+", "@Framework/Form/hidden_widget.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/hidden_widget.html.php");
     }
 }

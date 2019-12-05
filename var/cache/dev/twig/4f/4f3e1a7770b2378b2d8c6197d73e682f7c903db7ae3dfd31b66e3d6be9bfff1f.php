@@ -135,6 +135,6 @@ class __TwigTemplate_104f99a28b547d96d3d7fecd3fbadeb7474e1778fe81fd0142b83774251
 .exception-message-wrapper .container {
     min-height: auto;
 }
-", "@WebProfiler/Collector/exception.css.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
 }

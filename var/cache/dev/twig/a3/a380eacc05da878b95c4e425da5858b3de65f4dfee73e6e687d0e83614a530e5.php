@@ -70,7 +70,10 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         echo "\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/category/horreur\">Categorie Horreur</a> 
+                    <a class=\"nav-link\" href=\"/wild/category/horror\">Categorie Horreur</a> 
+                </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/wild/category/fantastique\">Categorie fantastique</a> 
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"/wild/\">Liste séries et films</a> 
@@ -80,12 +83,14 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Ma séléction
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/wild/show/walking-dead\">Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/the-walking-dead\">Walking Dead </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/the-haunting-of-hill-house\">The Haunting Of Hill House </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/american-horror-story\">American Horror Story  </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/love-death-and-robots\">Love Death And Robots </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/penny-dreadful\">Penny Dreadful </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/fear-the-walking-dead\">Fear The Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/game-of-thrones\">Games of thrones </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/lucifer\">Lucifer </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
@@ -126,7 +131,10 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"nav-link\" href=\"{{ path('app_index') }}\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/category/horreur\">Categorie Horreur</a> 
+                    <a class=\"nav-link\" href=\"/wild/category/horror\">Categorie Horreur</a> 
+                </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/wild/category/fantastique\">Categorie fantastique</a> 
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"/wild/\">Liste séries et films</a> 
@@ -136,12 +144,14 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Ma séléction
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"dropdown-item\" href=\"/wild/show/walking-dead\">Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/the-walking-dead\">Walking Dead </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/the-haunting-of-hill-house\">The Haunting Of Hill House </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/american-horror-story\">American Horror Story  </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/love-death-and-robots\">Love Death And Robots </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/penny-dreadful\">Penny Dreadful </a>
                     <a class=\"dropdown-item\" href=\"/wild/show/fear-the-walking-dead\">Fear The Walking Dead </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/game-of-thrones\">Games of thrones </a>
+                    <a class=\"dropdown-item\" href=\"/wild/show/lucifer\">Lucifer </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>

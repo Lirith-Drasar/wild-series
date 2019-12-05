@@ -69,6 +69,6 @@ class __TwigTemplate_844825202dbbc2b371d3d18d577bc46d8347b2bddee15545ea47d6da8f1
     public function getSourceContext()
     {
         return new Source("{{ include('@Twig/Exception/exception.xml.twig', { exception: exception }) }}
-", "@Twig/Exception/exception.rdf.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/exception.rdf.twig");
+", "@Twig/Exception/exception.rdf.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/exception.rdf.twig");
     }
 }

@@ -71,6 +71,6 @@ class __TwigTemplate_50ccc35516c87717c0cd419b654808aca84b692bacb29b430c448db61af
     <?php if (strlen(\$value) > 0): ?> value=\"<?php echo \$view->escape(\$value) ?>\"<?php endif ?>
     <?php if (\$checked): ?> checked=\"checked\"<?php endif ?>
 />
-", "@Framework/Form/checkbox_widget.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
+", "@Framework/Form/checkbox_widget.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
     }
 }

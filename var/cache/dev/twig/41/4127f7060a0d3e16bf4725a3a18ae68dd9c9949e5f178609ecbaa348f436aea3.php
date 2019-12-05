@@ -79,6 +79,6 @@ class __TwigTemplate_672756157a5714198a18f048b9faf850c45272fac89dae8f9fecc69be6c
         return new Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

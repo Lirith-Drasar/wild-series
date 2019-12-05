@@ -171,6 +171,6 @@ class __TwigTemplate_695b329d373dc338ea36e60c441bc06dd4e4bef3968c685965306966d14
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

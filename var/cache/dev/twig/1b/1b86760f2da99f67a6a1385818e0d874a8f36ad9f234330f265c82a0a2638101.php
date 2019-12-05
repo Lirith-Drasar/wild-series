@@ -63,6 +63,6 @@ class __TwigTemplate_f3fc6622b05785c3e0eaa395a47cf67fbbff689a34fbf872c0148160c48
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'choice_widget_options') ?>
-", "@Framework/Form/choice_options.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
+", "@Framework/Form/choice_options.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
     }
 }

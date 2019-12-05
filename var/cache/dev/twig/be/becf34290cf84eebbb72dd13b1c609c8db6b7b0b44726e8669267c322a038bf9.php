@@ -59,6 +59,6 @@ class __TwigTemplate_d0f88fcae81c832f0c1cc3afe4817e7be79591834333163ef334bfcf2ef
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/button_label.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
+        return new Source("", "@Framework/Form/button_label.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
     }
 }

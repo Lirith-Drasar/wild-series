@@ -65,9 +65,9 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    <h1>Toutes les séries de la catégorie « ";
+        echo "    <h1>All TV shows from \"";
         echo twig_escape_filter($this->env, (isset($context["categoryName"]) || array_key_exists("categoryName", $context) ? $context["categoryName"] : (function () { throw new RuntimeError('Variable "categoryName" does not exist.', 4, $this->source); })()), "html", null, true);
-        echo " » : </h1>
+        echo "\" category: </h1>
     ";
         // line 5
         $context['_parent'] = $context;
@@ -96,7 +96,7 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
             echo "</h2>
             <p>";
             // line 8
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "summary", [], "any", false, false, false, 8), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "synopsis", [], "any", false, false, false, 8), "html", null, true);
             echo "</p>
         </div>
     ";
@@ -140,11 +140,11 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
         return new Source("{% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Toutes les séries de la catégorie « {{ categoryName }} » : </h1>
+    <h1>All TV shows from \"{{ categoryName }}\" category: </h1>
     {% for program in programs %}
         <div>
             <h2>{{ loop.index }} / {{ program.title }}</h2>
-            <p>{{ program.summary }}</p>
+            <p>{{ program.synopsis }}</p>
         </div>
     {% endfor %}
 {% endblock %}", "wild/category.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/category.html.twig");

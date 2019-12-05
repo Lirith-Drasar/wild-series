@@ -67,6 +67,6 @@ class __TwigTemplate_efbd2f4cdbeb991f4366121ec1fe49eea23bee22c1de2f830412eb01ba0
         return new Source("<div>
     <?php echo \$view['form']->widget(\$form) ?>
 </div>
-", "@Framework/Form/button_row.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
+", "@Framework/Form/button_row.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
     }
 }

@@ -125,6 +125,6 @@ class __TwigTemplate_245e2e1b7e0f4645d4e21f8d8605c13b944bd6214e921f29af6a8e83ac7
         </div>
     </body>
 </html>
-", "@Twig/Exception/error.html.twig", "/home/sheitak/Wild Series/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/error.html.twig");
+", "@Twig/Exception/error.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/twig-bundle/Resources/views/Exception/error.html.twig");
     }
 }

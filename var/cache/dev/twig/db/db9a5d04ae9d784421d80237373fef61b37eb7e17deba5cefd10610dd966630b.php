@@ -228,6 +228,6 @@ class __TwigTemplate_c1dbeab3e984a89e00cadea6c500a613a923317758a6d831464a5153568
         {% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/lirith-drasar/Bureau/Projet/Wild-Series/templates/base.html.twig");
+", "base.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/base.html.twig");
     }
 }

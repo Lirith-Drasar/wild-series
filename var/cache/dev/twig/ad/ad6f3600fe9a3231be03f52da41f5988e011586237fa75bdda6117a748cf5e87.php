@@ -65,6 +65,6 @@ class __TwigTemplate_7b1cffe0e04d054efb03e6a77270c4253cc6c7662cdce308bcaa1a5f423
     {
         return new Source("<?php \$symbol = false !== \$symbol ? (\$symbol ? ' '.\$symbol : ' %') : '' ?>
 <?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => isset(\$type) ? \$type : 'text']).\$view->escape(\$symbol) ?>
-", "@Framework/Form/percent_widget.html.php", "/home/sheitak/Wild Series/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+", "@Framework/Form/percent_widget.html.php", "/home/lirith-drasar/Bureau/Projet/wild-series/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
     }
 }

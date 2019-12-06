@@ -178,3 +178,16 @@ c4c695,127.0.0.1,GET,http://localhost:8000/wild/season/1,1575561412,,200
 923e45,127.0.0.1,GET,http://localhost:8000/wild/season/2,1575561413,,200
 53e0d4,127.0.0.1,GET,http://localhost:8000/wild/season/3,1575561414,,200
 534894,127.0.0.1,GET,http://localhost:8000/wild/season/4,1575561418,,200
+b1e32d,127.0.0.1,GET,http://localhost:8000/wild/season/4,1575561456,,200
+13080a,127.0.0.1,GET,http://localhost:8000/,1575628110,,200
+87925e,127.0.0.1,GET,http://localhost:8000/,1575628119,,200
+a6896d,127.0.0.1,GET,http://localhost:8000/wild/category/horror,1575628196,,200
+e9422f,127.0.0.1,GET,http://localhost:8000/wild/category/fantastique,1575628198,,200
+63d5ec,127.0.0.1,GET,http://localhost:8000/wild/,1575628199,,301
+7c292d,127.0.0.1,GET,http://localhost:8000/wild,1575628200,,200
+167ae2,127.0.0.1,GET,http://localhost:8000/wild/show/the-walking-dead,1575628202,,200
+02c2dd,127.0.0.1,GET,http://localhost:8000/wild/show/lucifer,1575628205,,200
+ce3d7f,127.0.0.1,GET,http://localhost:8000/wild/season/1,1575628207,,200
+e9a02b,127.0.0.1,GET,http://localhost:8000/wild/season/2,1575628210,,200
+eef132,127.0.0.1,GET,http://localhost:8000/Home/index/,1575628228,f61758,200
+f61758,127.0.0.1,GET,http://localhost:8000/Home/index/,1575628228,,404

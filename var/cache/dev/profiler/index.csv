@@ -365,3 +365,11 @@ ebf253,127.0.0.1,GET,http://localhost:8000/wild/season/1,1575646889,,200
 2a9a47,127.0.0.1,GET,http://localhost:8000/wild/season/1,1575646890,,200
 271a63,127.0.0.1,GET,http://localhost:8000/wild/season/1,1575646891,,200
 efd6bc,127.0.0.1,GET,http://localhost:8000/wild/program/game-of-thrones,1575646894,,200
+ac2429,127.0.0.1,GET,http://localhost:8000/,1575647551,,200
+ff50b6,127.0.0.1,GET,http://localhost:8000/,1575647564,,200
+ba9cd9,127.0.0.1,GET,http://localhost:8000/wild/category/horror,1575647579,,200
+5cf12e,127.0.0.1,GET,http://localhost:8000/wild/category/fantastique,1575647580,,200
+ffc11d,127.0.0.1,GET,http://localhost:8000/wild,1575647581,,200
+27067f,127.0.0.1,GET,http://localhost:8000/wild/show/lucifer,1575647584,,200
+0c61ef,127.0.0.1,GET,http://localhost:8000/wild/season/1,1575647586,,200
+d900ff,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575647587,,200

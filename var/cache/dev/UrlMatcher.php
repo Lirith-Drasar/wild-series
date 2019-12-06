@@ -40,6 +40,7 @@ return [
                     .')'
                     .'|category(?:/([a-z]+))?(*:256)'
                     .'|program(?:/([a-z0-9-]+))?(*:289)'
+                    .'|episode/([^/]++)(*:313)'
                 .')'
             .')/?$}sDu',
     ],
@@ -54,8 +55,9 @@ return [
         203 => [[['_route' => 'wild_show', 'slug' => null, '_controller' => 'App\\Controller\\WildController::show'], ['slug'], null, null, false, true, null]],
         225 => [[['_route' => 'show_season', 'programName' => null, '_controller' => 'App\\Controller\\WildController::showBySeason'], ['seasonId'], null, null, false, true, null]],
         256 => [[['_route' => 'show_category', 'categoryName' => null, '_controller' => 'App\\Controller\\WildController::showByCategory'], ['categoryName'], null, null, false, true, null]],
-        289 => [
-            [['_route' => 'show_program', 'programName' => null, '_controller' => 'App\\Controller\\WildController::showByProgram'], ['programName'], null, null, false, true, null],
+        289 => [[['_route' => 'show_program', 'programName' => null, '_controller' => 'App\\Controller\\WildController::showByProgram'], ['programName'], null, null, false, true, null]],
+        313 => [
+            [['_route' => 'show_episode', '_controller' => 'App\\Controller\\WildController::showByEpisode'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

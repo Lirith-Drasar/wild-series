@@ -108,6 +108,17 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
                 </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Les episodes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/wild/episode/1\">Games Of Thrones saison 1 </a>
+                    <div class=\"dropdown-divider\">
+                    </div>
+                    <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
+                    </div>
+                </li>
             </ul>
             <form class=\"form-inline my-2 my-lg-0\">
                 <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
@@ -179,6 +190,17 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"dropdown-item\" href=\"/wild/season/3\">Lucifer saison 1</a>
                     <a class=\"dropdown-item\" href=\"/wild/season/4\">Lucifer saison 2</a>
                     <div class=\"dropdown-divider\"></div>
+                    <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Les episodes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"dropdown-item\" href=\"/wild/episode/1\">Games Of Thrones saison 1 </a>
+                    <div class=\"dropdown-divider\">
+                    </div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
                 </li>

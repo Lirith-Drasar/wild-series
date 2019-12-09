@@ -13,9 +13,9 @@ use App\Form\ProgramType;
 
 class WildController extends AbstractController
 {
-    /**
-    * @Route("/wild", name="wild_index")
-    */
+/**
+* @Route("/wild", name="wild_index")
+*/
     public function index(ProgramRepository $programRepository, Request $request)
     {
         $programs = $programRepository->findAll();
@@ -35,7 +35,7 @@ class WildController extends AbstractController
 
     /**
      * Si le formulaire est soumis et valide, utilise la magic fonction de doctrine -> getmanager 
-     * pour enregistrer et envoyer les données dans la BDD)
+     * pour enregistrer les données dans la base de donnée
      */
     if ($form->isSubmitted() && $form->isValid()) {
         $newProgram = $form->getData();

@@ -9,31 +9,49 @@ use App\Repository\SeasonRepository;
 use App\Form\ProgramSearchType;
 use App\Entity\Episode;
 use Symfony\Component\HttpFoundation\Request;
+use App\Form\ProgramType;
 
 class WildController extends AbstractController
 {
     /**
-     * @Route("/wild", name="wild_index")
-     */
-    public function index(ProgramRepository $programRepository)
+    * @Route("/wild", name="wild_index")
+    */
+    public function index(ProgramRepository $programRepository, Request $request)
     {
         $programs = $programRepository->findAll();
         if (!$programs) {
-            throw $this->createNotFoundException('No program found in program\'s table.');
-        }
-
-        $form = $this->createForm(
-            ProgramSearchType::class,
-            null,
-            ['method' => Request::METHOD_GET]
-        );
-
-        return $this->render('wild/index.html.twig', [
-                'programs' => $programs,
-                'form' => $form->createView()
-            ]
-        );
+        throw $this->createNotFoundException('No program found in program\'s table.');
     }
+
+    /**
+     * Création du formulaire ProgramType créér avec php bin/console make:form
+     */
+    $form = $this->createForm(ProgramType::class);
+
+    /**
+     * Les requètes du formulaire sont manipulés. 
+     */
+    $form->handleRequest($request);
+
+    /**
+     * Si le formulaire est soumis et valide, utilise la magic fonction de doctrine -> getmanager 
+     * pour enregistrer et envoyer les données dans la BDD)
+     */
+    if ($form->isSubmitted() && $form->isValid()) {
+        $newProgram = $form->getData();
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($newProgram);
+        $entityManager->flush();
+        dump($newProgram);
+    }
+
+    return $this->render('wild/index.html.twig', [
+    'programs' => $programs,
+    'form' => $form->createView()
+    ]
+    );
+}
+
 
     /**
      * @Route("/wild/show/{slug<[a-z0-9-]+>}", defaults={"slug" = null}, name="wild_show")

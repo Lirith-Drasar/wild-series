@@ -34,7 +34,7 @@ class WildController extends AbstractController
     $form->handleRequest($request);
 
     /**
-     * Si le formulaire est soumis et valide, utilise la magic fonction de doctrine -> getmanager 
+     * Si le formulaire est soumis et validé, utilise la magic fonction de doctrine -> getmanager 
      * pour enregistrer les données dans la base de donnée
      */
     if ($form->isSubmitted() && $form->isValid()) {

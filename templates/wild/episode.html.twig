@@ -1,3 +1,4 @@
+
 {% extends 'base.html.twig' %}
 
 {% block body %}
@@ -19,7 +20,7 @@
             Back to season list
         </a>
         -
-        <a href="{{ path('show_program', {programName: Title}) }}">
+        <a href="{{ path('show_program', {programName: hyphenizedProgramTitle}) }}">
             Back to show details
         </a>
     </p>

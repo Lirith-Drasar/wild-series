@@ -435,3 +435,17 @@ cdf2f1,127.0.0.1,GET,http://localhost:8000/wild,1575882151,,200
 c3533e,127.0.0.1,GET,http://localhost:8000/,1575882179,393ac0,200
 393ac0,127.0.0.1,GET,http://localhost:8000/,1575882179,,500
 8a92fd,127.0.0.1,GET,http://localhost:8000/,1575882201,,200
+d2d2ab,127.0.0.1,GET,http://localhost:8000/wild/category/horror,1575882330,,200
+e03f1a,127.0.0.1,GET,http://localhost:8000/wild/category/fantastique,1575882331,,200
+cdcd28,127.0.0.1,GET,http://localhost:8000/wild,1575882331,,200
+0b17c4,127.0.0.1,GET,http://localhost:8000/wild/show/the-walking-dead,1575882333,,200
+03fd22,127.0.0.1,GET,http://localhost:8000/wild/season/1,1575882334,,200
+92b957,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575882335,0ece36,200
+0ece36,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575882335,,500
+aab288,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575882344,762b37,200
+762b37,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575882344,,500
+d41f56,127.0.0.1,GET,http://localhost:8000/wild/episode/4,1575882347,5618fc,200
+5618fc,127.0.0.1,GET,http://localhost:8000/wild/episode/4,1575882347,,500
+355eba,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575882392,97b884,200
+97b884,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575882392,,500
+accf1d,127.0.0.1,GET,http://localhost:8000/wild/episode/1,1575882433,,200

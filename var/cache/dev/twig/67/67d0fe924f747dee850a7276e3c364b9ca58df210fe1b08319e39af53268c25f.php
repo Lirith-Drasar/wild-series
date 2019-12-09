@@ -87,17 +87,19 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         foreach ($context['_seq'] as $context["_key"] => $context["program"]) {
             // line 6
             echo "        <div>
-            <h2>";
-            // line 7
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 7), "html", null, true);
-            echo " / ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 7), "html", null, true);
-            echo " - Category: ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["program"], "category", [], "any", false, false, false, 7), "name", [], "any", false, false, false, 7), "html", null, true);
-            echo "</h2>
-            <p>";
+            <h2>
+                ";
             // line 8
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "synopsis", [], "any", false, false, false, 8), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 8), "html", null, true);
+            echo " / ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 8), "html", null, true);
+            echo " - Category: ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["program"], "category", [], "any", false, false, false, 8), "name", [], "any", false, false, false, 8), "html", null, true);
+            echo "
+            </h2>
+            <p>";
+            // line 10
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "synopsis", [], "any", false, false, false, 10), "html", null, true);
             echo "</p>
         </div>
     ";
@@ -112,14 +114,14 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
             }
         }
         if (!$context['_iterated']) {
-            // line 11
+            // line 13
             echo "        No TV show found.
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['program'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 13
+        // line 15
         echo "    <a href=\"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
         echo "\">
@@ -146,7 +148,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
 
     public function getDebugInfo()
     {
-        return array (  123 => 13,  116 => 11,  100 => 8,  92 => 7,  89 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  125 => 15,  118 => 13,  102 => 10,  93 => 8,  89 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -157,7 +159,9 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
     <h1>All TV shows: </h1>
     {% for program in programs %}
         <div>
-            <h2>{{ loop.index }} / {{ program.title }} - Category: {{ program.category.name }}</h2>
+            <h2>
+                {{ loop.index }} / {{ program.title }} - Category: {{ program.category.name }}
+            </h2>
             <p>{{ program.synopsis }}</p>
         </div>
     {% else %}

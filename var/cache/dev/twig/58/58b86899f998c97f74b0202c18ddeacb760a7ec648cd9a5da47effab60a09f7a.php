@@ -24,15 +24,10 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
 
         $this->source = $this->getSourceContext();
 
-        $this->blocks = [
-            'title' => [$this, 'block_title'],
-        ];
-    }
+        $this->parent = false;
 
-    protected function doGetParent(array $context)
-    {
-        // line 1
-        return "base.html.twig";
+        $this->blocks = [
+        ];
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -44,46 +39,11 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "wild/home.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "wild/home.html.twig", 1);
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-    }
-
-    // line 3
-    public function block_title($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
-
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
-
-        // line 4
-        echo "    <!doctype html>
-    <html lang=\"en\">
-        <head>
-            <meta charset=\"UTF-8\">
-            <title>Document</title>
-        </head>
-        <body>
-            <h1>";
-        // line 11
-        echo twig_escape_filter($this->env, (isset($context["welcome"]) || array_key_exists("welcome", $context) ? $context["welcome"] : (function () { throw new RuntimeError('Variable "welcome" does not exist.', 11, $this->source); })()), "html", null, true);
-        echo "</h1>
-        </body>
-    </html>
-";
-        
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
-
-        
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
     }
 
@@ -92,31 +52,13 @@ class __TwigTemplate_fb7143871f717913090432d3930a9cb54978e9cd9ac6c408abe3753677d
         return "wild/home.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  77 => 11,  68 => 4,  58 => 3,  35 => 1,);
+        return array ();
     }
 
     public function getSourceContext()
     {
-        return new Source("{% extends 'base.html.twig' %}
-
-{% block title %}
-    <!doctype html>
-    <html lang=\"en\">
-        <head>
-            <meta charset=\"UTF-8\">
-            <title>Document</title>
-        </head>
-        <body>
-            <h1>{{ welcome }}</h1>
-        </body>
-    </html>
-{% endblock %}", "wild/home.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/home.html.twig");
+        return new Source("", "wild/home.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/home.html.twig");
     }
 }

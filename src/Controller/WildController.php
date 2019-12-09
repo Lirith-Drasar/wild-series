@@ -1,6 +1,6 @@
 <?php
-namespace App\Controller;
 
+namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\ProgramRepository;
@@ -11,8 +11,8 @@ use App\Entity\Episode;
 class WildController extends AbstractController
 {
     /**
-    * @Route("/wild", name="wild_index")
-    */
+     * @Route("/wild", name="wild_index")
+     */
     public function index(ProgramRepository $programRepository)
     {
         $programs = $programRepository->findAll();
@@ -22,8 +22,8 @@ class WildController extends AbstractController
         return $this->render('wild/index.html.twig', ['programs' => $programs]);
     }
     /**
-    * @Route("/wild/show/{slug<[a-z0-9-]+>}", defaults={"slug" = null}, name="wild_show")
-    */
+     * @Route("/wild/show/{slug<[a-z0-9-]+>}", defaults={"slug" = null}, name="wild_show")
+     */
     public function show(?string $slug, ProgramRepository $programRepository)
     {
         if (!$slug) {
@@ -40,8 +40,8 @@ class WildController extends AbstractController
         ]);
     }
     /**
-    * @Route("/wild/category/{categoryName<[a-z]+>}", defaults={"categoryName" = null}, name="show_category")
-    */
+     * @Route("/wild/category/{categoryName<[a-z]+>}", defaults={"categoryName" = null}, name="show_category")
+     */
     public function showByCategory(string $categoryName, CategoryRepository $categoryRepository, ProgramRepository $programRepository)
     {
         $category = $categoryRepository->findOneBy(['name' => mb_strtolower($categoryName)]);
@@ -56,8 +56,8 @@ class WildController extends AbstractController
         ]);
     }
     /**
-    * @Route("/wild/program/{programName<[a-z0-9-]+>}", defaults={"programName" = null}, name="show_program")
-    */
+     * @Route("/wild/program/{programName<[a-z0-9-]+>}", defaults={"programName" = null}, name="show_program")
+     */
     public function showByProgram(string $programName, ProgramRepository $programRepository)
     {
         $program = $programRepository->findOneBy(['title' => str_replace('-', ' ',$programName)]);
@@ -68,8 +68,8 @@ class WildController extends AbstractController
         ]);
     }
     /**
-    * @Route("/wild/season/{seasonId<[0-9]+>}", defaults={"programName" = null}, name="show_season")
-    */
+     * @Route("/wild/season/{seasonId<[0-9]+>}", name="show_season")
+     */
     public function showBySeason(int $seasonId, SeasonRepository $seasonRepository)
     {
         $season = $seasonRepository->findOneById($seasonId);
@@ -81,7 +81,6 @@ class WildController extends AbstractController
             'episodes' => $episodes
         ]);
     }
-
     /**
      * @Route("/wild/episode/{id}", name="show_episode")
      */
@@ -89,12 +88,12 @@ class WildController extends AbstractController
     {
         $season = $episode->getSeason();
         $program = $season->getProgram();
-        $Title = strtolower(str_replace(' ', '-', $program->getTitle()));
+        $hyphenizedProgramTitle = strtolower(str_replace(' ', '-', $program->getTitle()));
         return $this->render('wild/episode.html.twig', [
             'episode' => $episode,
             'season' => $season,
             'program' => $program,
-            'Title' => $Title
+            'hyphenizedProgramTitle' => $hyphenizedProgramTitle
         ]);
     }
 }

@@ -78,6 +78,9 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"/category/\">Formulaire category</a> 
                 </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/wild/\">Formulaire programme</a> 
+                </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Ma séléction
@@ -165,6 +168,9 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 </li>
                 <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"/category/\">Formulaire category</a> 
+                </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/wild/\">Formulaire programme</a> 
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">

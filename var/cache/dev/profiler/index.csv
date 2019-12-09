@@ -529,3 +529,11 @@ ea533d,127.0.0.1,GET,http://localhost:8000/wild/category/fantastique,1575909763,
 d9d66e,127.0.0.1,GET,http://localhost:8000/category,1575909764,,200
 8f13aa,127.0.0.1,GET,http://localhost:8000/category,1575909783,,200
 48db9f,127.0.0.1,GET,http://localhost:8000/category,1575909784,,200
+216f5b,127.0.0.1,GET,http://localhost:8000/category,1575909849,,200
+685941,127.0.0.1,GET,http://localhost:8000/wild,1575909851,,200
+e77937,127.0.0.1,GET,http://localhost:8000/,1575910269,,200
+cad7f8,127.0.0.1,GET,http://localhost:8000/,1575910285,,200
+e47a8e,127.0.0.1,GET,http://localhost:8000/category/,1575910298,,301
+096e24,127.0.0.1,GET,http://localhost:8000/category,1575910298,,200
+0aa580,127.0.0.1,POST,http://localhost:8000/category,1575910306,,302
+0a34fd,127.0.0.1,GET,http://localhost:8000/wild,1575910306,,200

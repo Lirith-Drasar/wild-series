@@ -5,3 +5,7 @@ https://drive.google.com/file/d/1bzXGmfb7Wy-VIkYUh2UAuHaFhlBVy_gi/view?usp=shari
 Symfony 10
 
 https://drive.google.com/file/d/1MBhb3cSEYTc-d4eUPLpzbNJx9UVu22Ez/view?usp=sharing
+
+Symfony 11
+
+https://drive.google.com/file/d/15NLcVshEX4wYpffNsGAMoXhIL3AphVEh/view?usp=sharing

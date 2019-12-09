@@ -127,6 +127,19 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         echo "\">
         Back to home
     </a>
+    ";
+        // line 18
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), 'form_start');
+        echo "
+        ";
+        // line 19
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 19, $this->source); })()), "searchField", [], "any", false, false, false, 19), 'row');
+        echo "
+        <button type=\"submit\" name=\"btnSearch\">Rechercher</button>
+    ";
+        // line 21
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 21, $this->source); })()), 'form_end');
+        echo "
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -148,7 +161,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
 
     public function getDebugInfo()
     {
-        return array (  125 => 15,  118 => 13,  102 => 10,  93 => 8,  89 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  141 => 21,  136 => 19,  132 => 18,  125 => 15,  118 => 13,  102 => 10,  93 => 8,  89 => 6,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -170,6 +183,10 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
     <a href=\"{{ path('app_index') }}\">
         Back to home
     </a>
+    {{ form_start(form) }}
+        {{ form_row(form.searchField) }}
+        <button type=\"submit\" name=\"btnSearch\">Rechercher</button>
+    {{ form_end(form) }}
 {% endblock %}", "wild/index.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/index.html.twig");
     }
 }

@@ -133,7 +133,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         echo "
         ";
         // line 19
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 19, $this->source); })()), "searchField", [], "any", false, false, false, 19), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 19, $this->source); })()), "title", [], "any", false, false, false, 19), 'row');
         echo "
         <button type=\"submit\" name=\"btnSearch\">Rechercher</button>
     ";
@@ -184,7 +184,7 @@ class __TwigTemplate_b0df698ae8d322173a09e848b39b54fe452d6f07cbf0ca4624b859f16c7
         Back to home
     </a>
     {{ form_start(form) }}
-        {{ form_row(form.searchField) }}
+        {{ form_row(form.title) }}
         <button type=\"submit\" name=\"btnSearch\">Rechercher</button>
     {{ form_end(form) }}
 {% endblock %}", "wild/index.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/index.html.twig");

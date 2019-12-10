@@ -76,10 +76,13 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"nav-link\" href=\"/wild/category/fantastique\">Categorie fantastique</a> 
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/category/\">Formulaire category</a> 
+                    <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/\">Formulaire programme</a> 
+                    <a class=\"nav-link\" href=\"/episode/new\">Nouveau Formulaire episode</a> 
+                </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/program/new\">Nouveau Formulaire programme</a> 
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -126,10 +129,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     </div>
                 </li>
             </ul>
-            <form class=\"form-inline my-2 my-lg-0\">
-                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
-                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
-            </form>
         </div>
     </nav>
 ";
@@ -167,10 +166,13 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"nav-link\" href=\"/wild/category/fantastique\">Categorie fantastique</a> 
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/category/\">Formulaire category</a> 
+                    <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/\">Formulaire programme</a> 
+                    <a class=\"nav-link\" href=\"/episode/new\">Nouveau Formulaire episode</a> 
+                </li>
+                <li class=\"nav-item\">
+                    <a class=\"nav-link\" href=\"/program/new\">Nouveau Formulaire programme</a> 
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -217,10 +219,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     </div>
                 </li>
             </ul>
-            <form class=\"form-inline my-2 my-lg-0\">
-                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
-                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
-            </form>
         </div>
     </nav>
 {% endblock %}", "/wild/navbar.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/navbar.html.twig");

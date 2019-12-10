@@ -7,7 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class ProgramType extends AbstractType
+class Program1Type extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -17,6 +17,7 @@ class ProgramType extends AbstractType
             ->add('country')
             ->add('year')
             ->add('synopsis')
+            ->add('category', null, ['choice_label' => 'name'])
         ;
     }
 

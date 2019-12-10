@@ -70,12 +70,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         echo "\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/category/horror\">Categorie Horreur</a> 
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/category/fantastique\">Categorie fantastique</a> 
-                </li>
-                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
                 </li>
                 <li class=\"nav-item\">
@@ -104,13 +98,13 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        Les saisons
+                        Les saisons de games of thrones
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                     <a class=\"dropdown-item\" href=\"/wild/season/1\">Games Of Thrones saison 1 </a>
                     <a class=\"dropdown-item\" href=\"/wild/season/2\">Games Of Thrones saison 2 </a>
-                    <a class=\"dropdown-item\" href=\"/wild/season/3\">Lucifer saison 1</a>
-                    <a class=\"dropdown-item\" href=\"/wild/season/4\">Lucifer saison 2</a>
+                    <a class=\"dropdown-item\" href=\"/wild/season/10\">Games Of Thrones saison 3 </a>
+                    <a class=\"dropdown-item\" href=\"/wild/season/11\">Games Of Thrones saison 4 </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>
@@ -161,12 +155,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                     <a class=\"nav-link\" href=\"{{ path('app_index') }}\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
                 <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/category/horror\">Categorie Horreur</a> 
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/wild/category/fantastique\">Categorie fantastique</a> 
-                </li>
-                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
                 </li>
                 <li class=\"nav-item\">
@@ -195,13 +183,13 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        Les saisons
+                        Les saisons de games of thrones
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                     <a class=\"dropdown-item\" href=\"/wild/season/1\">Games Of Thrones saison 1 </a>
                     <a class=\"dropdown-item\" href=\"/wild/season/2\">Games Of Thrones saison 2 </a>
-                    <a class=\"dropdown-item\" href=\"/wild/season/3\">Lucifer saison 1</a>
-                    <a class=\"dropdown-item\" href=\"/wild/season/4\">Lucifer saison 2</a>
+                    <a class=\"dropdown-item\" href=\"/wild/season/10\">Games Of Thrones saison 3 </a>
+                    <a class=\"dropdown-item\" href=\"/wild/season/11\">Games Of Thrones saison 4 </a>
                     <div class=\"dropdown-divider\"></div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
                     </div>

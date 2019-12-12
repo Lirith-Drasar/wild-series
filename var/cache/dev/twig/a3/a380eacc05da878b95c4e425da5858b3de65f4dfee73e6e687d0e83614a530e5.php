@@ -69,15 +69,14 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
         echo "\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/episode/new\">Nouveau Formulaire episode</a> 
-                </li>
-                <li class=\"nav-item\">
+                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Mes formulaires
+                    </a>
+                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                     <a class=\"nav-link\" href=\"/program/new\">Nouveau Formulaire programme</a> 
-                </li>
+                    <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
+                    <a class=\"nav-link\" href=\"/episode/new\">Nouveau Formulaire episode</a> 
+                </div>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Ma séléction
@@ -101,10 +100,9 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Les saisons de Lucifer
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                        <a class=\"dropdown-item\" href=\"/wild/season/1\">Games Of Thrones saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/season/2\">Games Of Thrones saison 2 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/season/10\">Games Of Thrones saison 3 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/season/11\">Games Of Thrones saison 4 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/season/5\">Lucifer saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/season/6\">Lucifer saison 3 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/season/8\">Lucifer saison 4 </a>
                     <div class=\"dropdown-divider\"></div>
                         <a class=\"dropdown-item\" href=\"#\">En cours de création</a> 
                     </div>
@@ -124,22 +122,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        Tout les episodes de Games of thrones
-                    </a>
-                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                        <a class=\"dropdown-item\" href=\"/wild/episode/1\">Games Of Thrones épisode 1 saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/2\">Games Of Thrones épisode 2 saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/3\">Games Of Thrones épisode 3 saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/4\">Games Of Thrones épisode 1 saison 2 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/5\">Games Of Thrones épisode 2 saison 2 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/6\">Games Of Thrones épisode 3 saison 2 </a>
-                    <div class=\"dropdown-divider\">
-                    </div>
-                    <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
-                    </div>
-                </li>
-                <li class=\"nav-item dropdown\">
-                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Tout les episodes de Lucifer
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
@@ -149,6 +131,22 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         <a class=\"dropdown-item\" href=\"/wild/episode/10\">Lucifer épisode 1 saison 2 </a>
                         <a class=\"dropdown-item\" href=\"/wild/episode/11\">Lucifer épisode 2 saison 2 </a>
                         <a class=\"dropdown-item\" href=\"/wild/episode/12\">Lucifer épisode 3 saison 2 </a>
+                    <div class=\"dropdown-divider\">
+                    </div>
+                    <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Tout les episodes de Games of thrones
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"/wild/episode/1\">Games Of Thrones épisode 1 saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/2\">Games Of Thrones épisode 2 saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/3\">Games Of Thrones épisode 3 saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/4\">Games Of Thrones épisode 1 saison 2 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/5\">Games Of Thrones épisode 2 saison 2 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/6\">Games Of Thrones épisode 3 saison 2 </a>
                     <div class=\"dropdown-divider\">
                     </div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
@@ -185,15 +183,14 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"{{ path('app_index') }}\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
-                </li>
-                <li class=\"nav-item\">
-                    <a class=\"nav-link\" href=\"/episode/new\">Nouveau Formulaire episode</a> 
-                </li>
-                <li class=\"nav-item\">
+                <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Mes formulaires
+                    </a>
+                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                     <a class=\"nav-link\" href=\"/program/new\">Nouveau Formulaire programme</a> 
-                </li>
+                    <a class=\"nav-link\" href=\"/season/new\">Nouveau Formulaire season</a> 
+                    <a class=\"nav-link\" href=\"/episode/new\">Nouveau Formulaire episode</a> 
+                </div>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Ma séléction
@@ -217,10 +214,9 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Les saisons de Lucifer
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                        <a class=\"dropdown-item\" href=\"/wild/season/1\">Games Of Thrones saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/season/2\">Games Of Thrones saison 2 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/season/10\">Games Of Thrones saison 3 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/season/11\">Games Of Thrones saison 4 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/season/5\">Lucifer saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/season/6\">Lucifer saison 3 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/season/8\">Lucifer saison 4 </a>
                     <div class=\"dropdown-divider\"></div>
                         <a class=\"dropdown-item\" href=\"#\">En cours de création</a> 
                     </div>
@@ -240,22 +236,6 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 </li>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
-                        Tout les episodes de Games of thrones
-                    </a>
-                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                        <a class=\"dropdown-item\" href=\"/wild/episode/1\">Games Of Thrones épisode 1 saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/2\">Games Of Thrones épisode 2 saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/3\">Games Of Thrones épisode 3 saison 1 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/4\">Games Of Thrones épisode 1 saison 2 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/5\">Games Of Thrones épisode 2 saison 2 </a>
-                        <a class=\"dropdown-item\" href=\"/wild/episode/6\">Games Of Thrones épisode 3 saison 2 </a>
-                    <div class=\"dropdown-divider\">
-                    </div>
-                    <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
-                    </div>
-                </li>
-                <li class=\"nav-item dropdown\">
-                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Tout les episodes de Lucifer
                     </a>
                     <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
@@ -265,6 +245,22 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         <a class=\"dropdown-item\" href=\"/wild/episode/10\">Lucifer épisode 1 saison 2 </a>
                         <a class=\"dropdown-item\" href=\"/wild/episode/11\">Lucifer épisode 2 saison 2 </a>
                         <a class=\"dropdown-item\" href=\"/wild/episode/12\">Lucifer épisode 3 saison 2 </a>
+                    <div class=\"dropdown-divider\">
+                    </div>
+                    <a class=\"dropdown-item\" href=\"#\">En cours de création</a>
+                    </div>
+                </li>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Tout les episodes de Games of thrones
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"/wild/episode/1\">Games Of Thrones épisode 1 saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/2\">Games Of Thrones épisode 2 saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/3\">Games Of Thrones épisode 3 saison 1 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/4\">Games Of Thrones épisode 1 saison 2 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/5\">Games Of Thrones épisode 2 saison 2 </a>
+                        <a class=\"dropdown-item\" href=\"/wild/episode/6\">Games Of Thrones épisode 3 saison 2 </a>
                     <div class=\"dropdown-divider\">
                     </div>
                     <a class=\"dropdown-item\" href=\"#\">En cours de création</a>

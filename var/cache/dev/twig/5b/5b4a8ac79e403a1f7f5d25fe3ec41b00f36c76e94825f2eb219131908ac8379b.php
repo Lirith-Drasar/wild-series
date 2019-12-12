@@ -31,7 +31,7 @@ class __TwigTemplate_11b3f4e9c8239d7bfa23ffa63a84036a2b7ddeca1ae898b1e83da6363e0
 
     protected function doGetParent(array $context)
     {
-        // line 2
+        // line 1
         return "base.html.twig";
     }
 
@@ -44,7 +44,7 @@ class __TwigTemplate_11b3f4e9c8239d7bfa23ffa63a84036a2b7ddeca1ae898b1e83da6363e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/home.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "home/home.html.twig", 2);
+        $this->parent = $this->loadTemplate("base.html.twig", "home/home.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -54,7 +54,7 @@ class __TwigTemplate_11b3f4e9c8239d7bfa23ffa63a84036a2b7ddeca1ae898b1e83da6363e0
 
     }
 
-    // line 4
+    // line 3
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -64,8 +64,9 @@ class __TwigTemplate_11b3f4e9c8239d7bfa23ffa63a84036a2b7ddeca1ae898b1e83da6363e0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 5
-        echo "<h1>Welcome!</h1>
+        // line 4
+        echo twig_include($this->env, $context, "/wild/header.html.twig");
+        echo "
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -87,16 +88,15 @@ class __TwigTemplate_11b3f4e9c8239d7bfa23ffa63a84036a2b7ddeca1ae898b1e83da6363e0
 
     public function getDebugInfo()
     {
-        return array (  68 => 5,  58 => 4,  35 => 2,);
+        return array (  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("
-{% extends 'base.html.twig' %}
+        return new Source("{% extends 'base.html.twig' %}
 
 {% block body %}
-<h1>Welcome!</h1>
+{{ include(\"/wild/header.html.twig\") }}
 {% endblock %}", "home/home.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/home/home.html.twig");
     }
 }

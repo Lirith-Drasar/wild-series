@@ -6,10 +6,12 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\ProgramRepository;
 use App\Repository\CategoryRepository;
 use App\Repository\SeasonRepository;
+use App\Repository\ActorRepository;
 use App\Form\ProgramSearchType;
 use App\Entity\Episode;
 use Symfony\Component\HttpFoundation\Request;
 use App\Form\ProgramType;
+use App\Entity\Actor;
 
 class WildController extends AbstractController
 {
@@ -90,13 +92,15 @@ class WildController extends AbstractController
     /**
      * @Route("/wild/program/{programName<[a-z0-9-]+>}", defaults={"programName" = null}, name="show_program")
      */
-    public function showByProgram(string $programName, ProgramRepository $programRepository)
+    public function showByProgram(string $programName, ProgramRepository $programRepository, ActorRepository $actorRepository)
     {
         $program = $programRepository->findOneBy(['title' => str_replace('-', ' ',$programName)]);
         $seasons = $program->getSeasons();
+        $actor = $program->getActor();
         return $this->render('wild/program.html.twig', [
             'program' => $program,
-            'seasons' => $seasons
+            'seasons' => $seasons,
+            'actor' => $actor
         ]);
     }
     /**

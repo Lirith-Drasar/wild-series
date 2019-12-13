@@ -69,6 +69,15 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_index");
         echo "\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Mes Acteurs
+                    </a>
+                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"nav-link\" href=\"/actor/1\">Andrew Lincoln</a> 
+                    <a class=\"nav-link\" href=\"/actor/2\">Norman Reedus</a> 
+                    <a class=\"nav-link\" href=\"/actor/3\">Lauren Cohan</a> 
+                    <a class=\"nav-link\" href=\"/actor/4\">Danai Gurira</a> 
+                </div>
                 <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Mes formulaires
                     </a>
@@ -183,6 +192,15 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                 <li class=\"nav-item active\">
                     <a class=\"nav-link\" href=\"{{ path('app_index') }}\">Homepage<span class=\"sr-only\">(current)</span></a>
                 </li>
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Mes Acteurs
+                    </a>
+                <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                    <a class=\"nav-link\" href=\"/actor/1\">Andrew Lincoln</a> 
+                    <a class=\"nav-link\" href=\"/actor/2\">Norman Reedus</a> 
+                    <a class=\"nav-link\" href=\"/actor/3\">Lauren Cohan</a> 
+                    <a class=\"nav-link\" href=\"/actor/4\">Danai Gurira</a> 
+                </div>
                 <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
                         Mes formulaires
                     </a>

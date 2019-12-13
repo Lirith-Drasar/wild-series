@@ -68,10 +68,11 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
         echo "    <h1>All TV shows from \"";
         echo twig_escape_filter($this->env, (isset($context["categoryName"]) || array_key_exists("categoryName", $context) ? $context["categoryName"] : (function () { throw new RuntimeError('Variable "categoryName" does not exist.', 4, $this->source); })()), "html", null, true);
         echo "\" category: </h1>
+
     ";
-        // line 5
+        // line 6
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["programs"]) || array_key_exists("programs", $context) ? $context["programs"] : (function () { throw new RuntimeError('Variable "programs" does not exist.', 5, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["programs"]) || array_key_exists("programs", $context) ? $context["programs"] : (function () { throw new RuntimeError('Variable "programs" does not exist.', 6, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -86,17 +87,17 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["program"]) {
-            // line 6
+            // line 7
             echo "        <div>
             <h2>";
-            // line 7
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 7), "html", null, true);
+            // line 8
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 8), "html", null, true);
             echo " / ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 7), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 8), "html", null, true);
             echo "</h2>
             <p>";
-            // line 8
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "synopsis", [], "any", false, false, false, 8), "html", null, true);
+            // line 9
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "synopsis", [], "any", false, false, false, 9), "html", null, true);
             echo "</p>
         </div>
     ";
@@ -112,6 +113,9 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['program'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 12
+        echo "    
+";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -132,7 +136,7 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
 
     public function getDebugInfo()
     {
-        return array (  99 => 8,  93 => 7,  90 => 6,  73 => 5,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  117 => 12,  100 => 9,  94 => 8,  91 => 7,  74 => 6,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -141,12 +145,14 @@ class __TwigTemplate_299094465aa45d3e6cff44c5e86d9aa374c74497123a56b66a833695538
 
 {% block body %}
     <h1>All TV shows from \"{{ categoryName }}\" category: </h1>
+
     {% for program in programs %}
         <div>
             <h2>{{ loop.index }} / {{ program.title }}</h2>
             <p>{{ program.synopsis }}</p>
         </div>
     {% endfor %}
+    
 {% endblock %}", "wild/category.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/category.html.twig");
     }
 }

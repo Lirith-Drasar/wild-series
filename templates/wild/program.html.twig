@@ -7,16 +7,11 @@
     </h2>
     <ul>
     {% for season in seasons %}
-        <li>
-            <a href="{{ path('show_season', {seasonId: season.id}) }}">
-                <b>
-                    Season {{ season.number }}
-                </b>
-            </a>
-            <p>
-                <b>{{ season.year }}</b> - {{ season.description }}
-            </p>
-        </li>
+        <a href="{{ path('show_season', {'number': season.number }) }}">
+        <li>{{ season.number }}</li>
+    </a>
+    {% else %}
+        <li>Aucune saison pour cette serie</li>
     {% endfor %}
     </ul>
 {% endblock %}

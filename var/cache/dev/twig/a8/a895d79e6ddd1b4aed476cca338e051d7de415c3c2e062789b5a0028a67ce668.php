@@ -76,35 +76,29 @@ class __TwigTemplate_e142645ea21d998a0b7b329ce8e789c9a22ee35ad7fe4fa440d0761ac71
         // line 9
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["seasons"]) || array_key_exists("seasons", $context) ? $context["seasons"] : (function () { throw new RuntimeError('Variable "seasons" does not exist.', 9, $this->source); })()));
+        $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["season"]) {
             // line 10
-            echo "        <li>
-            <a href=\"";
-            // line 11
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_season", ["seasonId" => twig_get_attribute($this->env, $this->source, $context["season"], "id", [], "any", false, false, false, 11)]), "html", null, true);
+            echo "        <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_season", ["number" => twig_get_attribute($this->env, $this->source, $context["season"], "number", [], "any", false, false, false, 10)]), "html", null, true);
             echo "\">
-                <b>
-                    Season ";
-            // line 13
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["season"], "number", [], "any", false, false, false, 13), "html", null, true);
-            echo "
-                </b>
-            </a>
-            <p>
-                <b>";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["season"], "year", [], "any", false, false, false, 17), "html", null, true);
-            echo "</b> - ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["season"], "description", [], "any", false, false, false, 17), "html", null, true);
-            echo "
-            </p>
-        </li>
+        <li>";
+            // line 11
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["season"], "number", [], "any", false, false, false, 11), "html", null, true);
+            echo "</li>
+    </a>
+    ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 14
+            echo "        <li>Aucune saison pour cette serie</li>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['season'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 21
+        // line 16
         echo "    </ul>
 ";
         
@@ -127,7 +121,7 @@ class __TwigTemplate_e142645ea21d998a0b7b329ce8e789c9a22ee35ad7fe4fa440d0761ac71
 
     public function getDebugInfo()
     {
-        return array (  108 => 21,  96 => 17,  89 => 13,  84 => 11,  81 => 10,  77 => 9,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  102 => 16,  95 => 14,  87 => 11,  82 => 10,  77 => 9,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -141,16 +135,11 @@ class __TwigTemplate_e142645ea21d998a0b7b329ce8e789c9a22ee35ad7fe4fa440d0761ac71
     </h2>
     <ul>
     {% for season in seasons %}
-        <li>
-            <a href=\"{{ path('show_season', {seasonId: season.id}) }}\">
-                <b>
-                    Season {{ season.number }}
-                </b>
-            </a>
-            <p>
-                <b>{{ season.year }}</b> - {{ season.description }}
-            </p>
-        </li>
+        <a href=\"{{ path('show_season', {'number': season.number }) }}\">
+        <li>{{ season.number }}</li>
+    </a>
+    {% else %}
+        <li>Aucune saison pour cette serie</li>
     {% endfor %}
     </ul>
 {% endblock %}", "wild/program.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/program.html.twig");

@@ -64,35 +64,63 @@ class __TwigTemplate_a451fa1463f0f55f9bacdec27680d0e1006f31af1f37ce004aabf43392f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 2
-        echo "    <strong>Acteur :</strong> ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 2, $this->source); })()), "name", [], "any", false, false, false, 2), "html", null, true);
         echo "
+    <strong>Acteur :</strong> ";
+        // line 3
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 3, $this->source); })()), "name", [], "any", false, false, false, 3), "html", null, true);
+        echo "
+
 <ul>
     ";
-        // line 4
+        // line 6
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 4, $this->source); })()), "programs", [], "any", false, false, false, 4));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 6, $this->source); })()), "programs", [], "any", false, false, false, 6));
         $context['_iterated'] = false;
+        $context['loop'] = [
+          'parent' => $context['_parent'],
+          'index0' => 0,
+          'index'  => 1,
+          'first'  => true,
+        ];
+        if (is_array($context['_seq']) || (is_object($context['_seq']) && $context['_seq'] instanceof \Countable)) {
+            $length = count($context['_seq']);
+            $context['loop']['revindex0'] = $length - 1;
+            $context['loop']['revindex'] = $length;
+            $context['loop']['length'] = $length;
+            $context['loop']['last'] = 1 === $length;
+        }
         foreach ($context['_seq'] as $context["_key"] => $context["program"]) {
-            // line 5
-            echo "        <li>";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 5), "html", null, true);
-            echo "<a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_program", ["programName" => twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 5)]), "html", null, true);
-            echo "\"></li>
+            // line 7
+            echo "    <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("show_program", ["programName" => twig_get_attribute($this->env, $this->source, (isset($context["hyphenizedProgamTitles"]) || array_key_exists("hyphenizedProgamTitles", $context) ? $context["hyphenizedProgamTitles"] : (function () { throw new RuntimeError('Variable "hyphenizedProgamTitles" does not exist.', 7, $this->source); })()), (twig_get_attribute($this->env, $this->source, $context["loop"], "index", [], "any", false, false, false, 7) - 1), [], "array", false, false, false, 7)]), "html", null, true);
+            echo "\">
+        <li>";
+            // line 8
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["program"], "title", [], "any", false, false, false, 8), "html", null, true);
+            echo "</li>
+    </a>
     ";
             $context['_iterated'] = true;
+            ++$context['loop']['index0'];
+            ++$context['loop']['index'];
+            $context['loop']['first'] = false;
+            if (isset($context['loop']['length'])) {
+                --$context['loop']['revindex0'];
+                --$context['loop']['revindex'];
+                $context['loop']['last'] = 0 === $context['loop']['revindex0'];
+            }
         }
         if (!$context['_iterated']) {
-            // line 7
+            // line 11
             echo "        <li>Aucun programme pour cet acteur</li>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['program'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 9
+        // line 13
         echo "</ul>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -114,20 +142,25 @@ class __TwigTemplate_a451fa1463f0f55f9bacdec27680d0e1006f31af1f37ce004aabf43392f
 
     public function getDebugInfo()
     {
-        return array (  95 => 9,  88 => 7,  78 => 5,  73 => 4,  67 => 2,  35 => 1,);
+        return array (  122 => 13,  115 => 11,  99 => 8,  94 => 7,  76 => 6,  70 => 3,  67 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}{% block body %}
+
     <strong>Acteur :</strong> {{ actor.name }}
+
 <ul>
     {% for program in actor.programs %}
-        <li>{{ program.title }}<a href=\"{{ path('show_program', {programName: program.title}) }}\"></li>
+    <a href=\"{{ path('show_program', {'programName': hyphenizedProgamTitles[loop.index - 1] }) }}\">
+        <li>{{ program.title }}</li>
+    </a>
     {% else %}
         <li>Aucun programme pour cet acteur</li>
     {% endfor %}
 </ul>
+
 {% endblock %}
 
 

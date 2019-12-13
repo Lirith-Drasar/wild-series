@@ -101,15 +101,11 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
         // line 10
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 10, $this->source); })()), "synopsis", [], "any", false, false, false, 10), "html", null, true);
         echo "</p>
-    <p>Category: ";
-        // line 11
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 11, $this->source); })()), "category", [], "any", false, false, false, 11), "name", [], "any", false, false, false, 11), "html", null, true);
-        echo "</p>
   </div>
 </div>
 
 <a href=\"";
-        // line 15
+        // line 14
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("wild_index");
         echo "\">
     Back to home
@@ -135,7 +131,7 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
 
     public function getDebugInfo()
     {
-        return array (  113 => 15,  106 => 11,  102 => 10,  98 => 9,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  109 => 14,  102 => 10,  98 => 9,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -150,7 +146,6 @@ class __TwigTemplate_96f760f4fc4cff257319642e6f3324bfa11dedf6b972a969ac965e22093
   <div class=\"media-body\">
     <h1 class=\"mt-0\">{{ program.title }}</h1>
     <p>{{ program.synopsis }}</p>
-    <p>Category: {{ program.category.name }}</p>
   </div>
 </div>
 

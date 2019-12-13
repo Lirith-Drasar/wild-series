@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* /wild/header.html.twig */
+/* wild/header.html.twig */
 class __TwigTemplate_77c1d05a68d6ffece7d6f15959ce297031c71d0214b1bc4e79b807513246a82f extends \Twig\Template
 {
     private $source;
@@ -35,10 +35,10 @@ class __TwigTemplate_77c1d05a68d6ffece7d6f15959ce297031c71d0214b1bc4e79b80751324
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/wild/header.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "wild/header.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/wild/header.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "wild/header.html.twig"));
 
         // line 1
         $this->displayBlock('header', $context, $blocks);
@@ -95,7 +95,7 @@ class __TwigTemplate_77c1d05a68d6ffece7d6f15959ce297031c71d0214b1bc4e79b80751324
 
     public function getTemplateName()
     {
-        return "/wild/header.html.twig";
+        return "wild/header.html.twig";
     }
 
     public function getDebugInfo()
@@ -130,6 +130,6 @@ class __TwigTemplate_77c1d05a68d6ffece7d6f15959ce297031c71d0214b1bc4e79b80751324
     <div class=\"section_1\">
         <img class=\"section_1\" src=\"https://cdn.apsari.com/102870/uploads/6b32d6e0-59d9-11e9-bacf-2301b7f3e310_800_420.png\">
     </div>
-{% endblock %}", "/wild/header.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/header.html.twig");
+{% endblock %}", "wild/header.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/header.html.twig");
     }
 }

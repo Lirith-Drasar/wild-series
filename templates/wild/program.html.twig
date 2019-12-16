@@ -1,17 +1,43 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>{{ program.title }}</h1>
-    <h2>
-        Seasons list:
-    </h2>
-    <ul>
-    {% for season in seasons %}
-        <a href="{{ path('show_season', {'number': season.number }) }}">
-        <li>{{ season.number }}</li>
-    </a>
-    {% else %}
-        <li>Aucune saison pour cette serie</li>
-    {% endfor %}
-    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img class="d-block w-100" src="{{ program.poster }}" alt="{{ program.title }} cover" />
+            </div>
+            <div class="col-6">
+                <h1>{{ program.title }}</h1>
+                <h2>
+                    Seasons list:
+                </h2>
+                <ul>
+                {% for season in seasons %}
+                    <li>
+                        <a href="{{ path('show_season', {seasonId: season.id}) }}">
+                            <b>
+                                Season {{ season.number }}
+                            </b>
+                        </a>
+                        <p>
+                            <b>{{ season.year }}</b> - {{ season.description }}
+                        </p>
+                    </li>
+                {% endfor %}
+                <tr>
+                <th><strong>Actors</strong></th>
+                <td>
+                    <ul>
+                        {% for actor in program.actors %}
+                            <li><a href="{{ path('show_actor', {'actorId': actor.id}) }}">{{ actor.name }}</a></li>
+                        {% else %}
+                            <li>Aucun acteur pour cette série</li>
+                        {% endfor %}
+                    </ul>
+                </td>    
+            </tr>
+                </ul>
+            </div>
+        </div>
+    </div>
 {% endblock %}

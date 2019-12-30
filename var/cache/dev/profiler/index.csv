@@ -426,3 +426,14 @@ cee463,127.0.0.1,GET,http://localhost:8000/actor/57,1577716371,,200
 93481b,127.0.0.1,GET,http://localhost:8000/actor/58,1577716373,,200
 79b094,127.0.0.1,GET,http://localhost:8000/actor/59,1577716375,,200
 3217ab,127.0.0.1,GET,http://localhost:8000/actor/60,1577716376,,200
+c5caea,127.0.0.1,GET,http://localhost:8000/,1577716593,,200
+461c31,127.0.0.1,GET,http://localhost:8000/,1577717544,,200
+287471,127.0.0.1,GET,http://localhost:8000/actor/56,1577717545,,200
+223578,127.0.0.1,GET,http://localhost:8000/actor,1577717561,,301
+4caf90,127.0.0.1,GET,http://localhost:8000/actor/,1577717561,,200
+2023fa,127.0.0.1,GET,http://localhost:8000/actor/56,1577717601,,200
+267eb8,127.0.0.1,GET,http://localhost:8000/actor/5,1577717606,e4ebfd,200
+e4ebfd,127.0.0.1,GET,http://localhost:8000/actor/5,1577717606,,404
+287b0d,127.0.0.1,GET,http://localhost:8000/actor/57,1577717610,,200
+118dca,127.0.0.1,GET,http://localhost:8000/actor/57,1577717692,,200
+c16eb2,127.0.0.1,GET,http://localhost:8000/actor/,1577717693,,200

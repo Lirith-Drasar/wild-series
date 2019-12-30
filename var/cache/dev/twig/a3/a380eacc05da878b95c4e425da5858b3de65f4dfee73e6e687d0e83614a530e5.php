@@ -73,10 +73,11 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Mes Acteurs
                     </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"nav-link\" href=\"/actor/1\">Andrew Lincoln</a> 
-                    <a class=\"nav-link\" href=\"/actor/2\">Norman Reedus</a> 
-                    <a class=\"nav-link\" href=\"/actor/3\">Lauren Cohan</a> 
-                    <a class=\"nav-link\" href=\"/actor/4\">Danai Gurira</a> 
+                    <a class=\"nav-link\" href=\"/actor/56\">Dorothée Caron</a> 
+                    <a class=\"nav-link\" href=\"/actor/57\">Martin Guibert</a> 
+                    <a class=\"nav-link\" href=\"/actor/58\">Léon de Guichard</a> 
+                    <a class=\"nav-link\" href=\"/actor/59\">Antoine Vincent-Neveu</a> 
+                    <a class=\"nav-link\" href=\"/actor/60\">Henri-Jean Alves</a> 
                 </div>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -197,10 +198,11 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         Mes Acteurs
                     </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-                    <a class=\"nav-link\" href=\"/actor/1\">Andrew Lincoln</a> 
-                    <a class=\"nav-link\" href=\"/actor/2\">Norman Reedus</a> 
-                    <a class=\"nav-link\" href=\"/actor/3\">Lauren Cohan</a> 
-                    <a class=\"nav-link\" href=\"/actor/4\">Danai Gurira</a> 
+                    <a class=\"nav-link\" href=\"/actor/56\">Dorothée Caron</a> 
+                    <a class=\"nav-link\" href=\"/actor/57\">Martin Guibert</a> 
+                    <a class=\"nav-link\" href=\"/actor/58\">Léon de Guichard</a> 
+                    <a class=\"nav-link\" href=\"/actor/59\">Antoine Vincent-Neveu</a> 
+                    <a class=\"nav-link\" href=\"/actor/60\">Henri-Jean Alves</a> 
                 </div>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">

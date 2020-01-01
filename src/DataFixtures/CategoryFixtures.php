@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Category;
+use App\Service\Slugify;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
@@ -25,8 +26,10 @@ class CategoryFixtures extends Fixture
         //for ($i = 0; $i < 10; $i++)
         {
             $category = new Category();
+            $slugify = new Slugify();
             //$category->setName($faker->country);
             $category->setName($name);
+            $category->setSlug($slugify->generate($category->getName()));
             $manager->persist($category);
             $this->addReference('categorie_' . $key, $category);
         }

@@ -52,6 +52,7 @@ class Program
      * @ORM\Column(type="string", length=255)
      */
     private $slug;
+    
     public function __construct()
     {
         $this->seasons = new ArrayCollection();

@@ -31,6 +31,7 @@ class ProgramController extends AbstractController
      */
     public function new(Request $request, Slugify $slugify): Response
     {
+        dump($slugify);
         $program = new Program();
         $form = $this->createForm(ProgramType::class, $program);
         $form->handleRequest($request);
@@ -38,6 +39,7 @@ class ProgramController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($program);
+            $program->setSlug($slugify->generate($program->getTitle()));
             $entityManager->flush();
 
             return $this->redirectToRoute('program_index');

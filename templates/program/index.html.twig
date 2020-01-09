@@ -3,17 +3,15 @@
 {% block title %}Program index{% endblock %}
 
 {% block body %}
-    <h1>Program index</h1>
+    <h1>Liste des séries</h1>
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Title</th>
+                <th>Summary</th>
                 <th>Poster</th>
-                <th>Country</th>
-                <th>Year</th>
-                <th>Synopsis</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,10 +20,8 @@
             <tr>
                 <td>{{ program.id }}</td>
                 <td>{{ program.title }}</td>
-                <td>{{ program.poster }}</td>
-                <td>{{ program.country }}</td>
-                <td>{{ program.year }}</td>
                 <td>{{ program.synopsis }}</td>
+                <td>{{ program.poster }}</td>
                 <td>
                     <a href="{{ path('program_show', {'id': program.id}) }}">show</a>
                     <a href="{{ path('program_edit', {'id': program.id}) }}">edit</a>
@@ -33,10 +29,11 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="7">no records found</td>
+                <td colspan="5">no records found</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
+
     <a href="{{ path('program_new') }}">Create new</a>
 {% endblock %}

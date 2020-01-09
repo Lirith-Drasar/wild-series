@@ -13,10 +13,21 @@ use Faker;
 class ActorFixtures extends Fixture implements DependentFixtureInterface
 {
     const ACTORS = [
-        'Andrew Lincoln',
-        'Norman Reedus',
-        'Lauren Cohan',
-        'Danai Gurira',
+        'Andrew Lincoln' => [
+            'program'    => 'program_0',
+        ],
+        'Norman Reedus' => [
+            'program'    => 'program_0',
+        ],
+        'Lauren Cohan' => [
+            'program'    => 'program_0',
+        ],
+        'Danai Gurira' => [
+            'program'    => 'program_0',
+        ],
+        'Peter Crouch' => [
+            'program'    => 'program_0',
+        ],
     ];
     public function load(ObjectManager $manager)
     {

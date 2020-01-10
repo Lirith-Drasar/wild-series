@@ -37,8 +37,9 @@ class ActorController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($actor);
+            $slugify = new Slugify();
             $actor->setSlug($slugify->generate($actor->getName()));
-
+            $actor->setUUID(Uuid::uuid4());
             $entityManager->flush();
 
             return $this->redirectToRoute('actor_index');
@@ -60,12 +61,14 @@ class ActorController extends AbstractController
     /**
      * @Route("/{id}/edit", name="actor_edit", methods={"GET","POST"})
      */
-    public function edit(Request $request, Actor $actor): Response
+    public function edit(Request $request, Actor $actor, Slugify $slugify): Response
     {
         $form = $this->createForm(ActorType::class, $actor);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $slugify = new Slugify();
+            $actor->setSlug($slugify->generate($actor->getName()));
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('actor_index');

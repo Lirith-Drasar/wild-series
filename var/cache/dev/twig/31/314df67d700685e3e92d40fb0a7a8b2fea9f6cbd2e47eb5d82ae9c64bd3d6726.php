@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* wild/navbar.html.twig */
+/* /wild/navbar.html.twig */
 class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c9366b514 extends \Twig\Template
 {
     private $source;
@@ -35,10 +35,10 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "wild/navbar.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/wild/navbar.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "wild/navbar.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/wild/navbar.html.twig"));
 
         // line 1
         $this->displayBlock('nav', $context, $blocks);
@@ -80,11 +80,11 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
                     </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                 <a class=\"nav-link\" href=\"/actor\">Tout les acteurs</a> 
-                    <a class=\"nav-link\" href=\"/actor/56\">Dorothée Caron</a> 
-                    <a class=\"nav-link\" href=\"/actor/57\">Martin Guibert</a> 
-                    <a class=\"nav-link\" href=\"/actor/58\">Léon de Guichard</a> 
-                    <a class=\"nav-link\" href=\"/actor/59\">Antoine Vincent-Neveu</a> 
-                    <a class=\"nav-link\" href=\"/actor/60\">Henri-Jean Alves</a> 
+                    <a class=\"nav-link\" href=\"/actor/61\">Dorothée Caron</a> 
+                    <a class=\"nav-link\" href=\"/actor/62\">Martin Guibert</a> 
+                    <a class=\"nav-link\" href=\"/actor/63\">Léon de Guichard</a> 
+                    <a class=\"nav-link\" href=\"/actor/64\">Antoine Vincent-Neveu</a> 
+                    <a class=\"nav-link\" href=\"/actor/65\">Henri-Jean Alves</a> 
                 </div>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -109,7 +109,7 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
 
     public function getTemplateName()
     {
-        return "wild/navbar.html.twig";
+        return "/wild/navbar.html.twig";
     }
 
     public function getDebugInfo()
@@ -137,11 +137,11 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
                     </a>
                 <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
                 <a class=\"nav-link\" href=\"/actor\">Tout les acteurs</a> 
-                    <a class=\"nav-link\" href=\"/actor/56\">Dorothée Caron</a> 
-                    <a class=\"nav-link\" href=\"/actor/57\">Martin Guibert</a> 
-                    <a class=\"nav-link\" href=\"/actor/58\">Léon de Guichard</a> 
-                    <a class=\"nav-link\" href=\"/actor/59\">Antoine Vincent-Neveu</a> 
-                    <a class=\"nav-link\" href=\"/actor/60\">Henri-Jean Alves</a> 
+                    <a class=\"nav-link\" href=\"/actor/61\">Dorothée Caron</a> 
+                    <a class=\"nav-link\" href=\"/actor/62\">Martin Guibert</a> 
+                    <a class=\"nav-link\" href=\"/actor/63\">Léon de Guichard</a> 
+                    <a class=\"nav-link\" href=\"/actor/64\">Antoine Vincent-Neveu</a> 
+                    <a class=\"nav-link\" href=\"/actor/65\">Henri-Jean Alves</a> 
                 </div>
                 <li class=\"nav-item dropdown\">
                     <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
@@ -155,6 +155,6 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
             </ul>
         </div>
     </nav>
-{% endblock %}", "wild/navbar.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/navbar.html.twig");
+{% endblock %}", "/wild/navbar.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/navbar.html.twig");
     }
 }

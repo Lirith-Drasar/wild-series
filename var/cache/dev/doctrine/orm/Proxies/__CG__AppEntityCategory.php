@@ -64,10 +64,10 @@ class Category extends \App\Entity\Category implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'programs'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'programs', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'slug'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'programs'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'programs', '' . "\0" . 'App\\Entity\\Category' . "\0" . 'slug'];
     }
 
     /**
@@ -241,6 +241,28 @@ class Category extends \App\Entity\Category implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeProgram', [$program]);
 
         return parent::removeProgram($program);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSlug(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSlug', []);
+
+        return parent::getSlug();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setSlug(string $slug): \App\Entity\Category
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setSlug', [$slug]);
+
+        return parent::setSlug($slug);
     }
 
 }

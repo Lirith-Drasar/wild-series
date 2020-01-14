@@ -84,8 +84,20 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
         if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
             return new RedirectResponse($targetPath);
         }
+
+        return new RedirectResponse($this->urlGenerator->generate('wild_index'));
     }
 
+    public function Authentication($name, AuthorizationCheckerInterface $authChecker)
+    {
+        // GOOD - use of the normal security methods
+        //$hasAccess = $this->isGranted('ROLE_ADMIN');
+        //$this->denyAccessUnlessGranted('ROLE_ADMIN');        if (false === $authChecker->isGranted('ROLE_ADMIN'))
+        {
+            throw new AccessDeniedException('Unable to access this page !');
+        }        return new RedirectResponse($this->urlGenerator->generate('wild_index'));
+    }
+//
     protected function getLoginUrl()
     {
         return $this->urlGenerator->generate('app_login');

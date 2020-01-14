@@ -83,7 +83,6 @@ class ActorController extends AbstractController
     {
         if ($this->isCsrfTokenValid('delete'.$actor->getId(), $request->request->get('_token'))) {
             $actor->setSlug($slugify->generate($actor->getName()));
-            $actor->setSlug($actor);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($actor);
             $entityManager->flush();

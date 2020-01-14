@@ -150,11 +150,15 @@ class __TwigTemplate_782f82b93675508cfcaa2392b62223f19e95c543c4a619405b2290b6601
         echo "        </tbody>
     </table>
 
-    <a href=\"";
+    ";
         // line 38
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("episode_new");
-        echo "\">Create new</a>
-";
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted((isset($context["ROLE_ADMIN"]) || array_key_exists("ROLE_ADMIN", $context) ? $context["ROLE_ADMIN"] : (function () { throw new RuntimeError('Variable "ROLE_ADMIN" does not exist.', 38, $this->source); })()))) {
+            // line 39
+            echo "        <a href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("episode_new");
+            echo "\">Create new</a>
+    ";
+        }
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -175,7 +179,7 @@ class __TwigTemplate_782f82b93675508cfcaa2392b62223f19e95c543c4a619405b2290b6601
 
     public function getDebugInfo()
     {
-        return array (  155 => 38,  150 => 35,  141 => 31,  132 => 27,  128 => 26,  123 => 24,  119 => 23,  115 => 22,  111 => 21,  108 => 20,  103 => 19,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  157 => 39,  155 => 38,  150 => 35,  141 => 31,  132 => 27,  128 => 26,  123 => 24,  119 => 23,  115 => 22,  111 => 21,  108 => 20,  103 => 19,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -217,7 +221,9 @@ class __TwigTemplate_782f82b93675508cfcaa2392b62223f19e95c543c4a619405b2290b6601
         </tbody>
     </table>
 
-    <a href=\"{{ path('episode_new') }}\">Create new</a>
+    {% if is_granted(ROLE_ADMIN) %}
+        <a href=\"{{ path('episode_new') }}\">Create new</a>
+    {% endif %}
 {% endblock %}
 ", "episode/index.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/episode/index.html.twig");
     }

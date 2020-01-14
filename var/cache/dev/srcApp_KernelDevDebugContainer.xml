@@ -252,7 +252,18 @@
     <parameter key="doctrine_migrations.organize_migrations">false</parameter>
     <parameter key="security.authentication.trust_resolver.anonymous_class">null</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">null</parameter>
-    <parameter key="security.role_hierarchy.roles" type="collection"/>
+    <parameter key="security.role_hierarchy.roles" type="collection">
+      <parameter key="ROLE_SUBSCRIBER" type="collection">
+        <parameter>ROLE_USER</parameter>
+      </parameter>
+      <parameter key="ROLE_ADMIN" type="collection">
+        <parameter>ROLE_SUBSCRIBER</parameter>
+      </parameter>
+      <parameter key="ROLE_SUPER_ADMIN" type="collection">
+        <parameter>ROLE_ADMIN</parameter>
+        <parameter>ROLE_ALLOWED_TO_SWITCH</parameter>
+      </parameter>
+    </parameter>
     <parameter key="security.access.denied_url">null</parameter>
     <parameter key="security.authentication.manager.erase_credentials">true</parameter>
     <parameter key="security.authentication.session_strategy.strategy">migrate</parameter>
@@ -3391,14 +3402,15 @@
       <argument type="service" id="request_stack"/>
     </service>
     <service id="security.role_hierarchy" class="Symfony\Component\Security\Core\Role\RoleHierarchy" public="false">
-      <argument type="collection"/>
-    </service>
-    <service id="security.access.simple_role_voter" class="Symfony\Component\Security\Core\Authorization\Voter\RoleVoter" public="false">
-      <tag name="security.voter" priority="245"/>
+      <argument>%security.role_hierarchy.roles%</argument>
     </service>
     <service id="security.access.authenticated_voter" class="Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter" public="false">
       <tag name="security.voter" priority="250"/>
       <argument type="service" id="security.authentication.trust_resolver"/>
+    </service>
+    <service id="security.access.role_hierarchy_voter" class="Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter" public="false">
+      <tag name="security.voter" priority="245"/>
+      <argument type="service" id="security.role_hierarchy"/>
     </service>
     <service id="security.access.expression_voter" class="Symfony\Component\Security\Core\Authorization\Voter\ExpressionVoter" public="false">
       <tag name="security.voter" priority="245"/>
@@ -5140,10 +5152,11 @@
         <argument key="episodeRepository" type="service" id="App\Repository\EpisodeRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.PqXbmwR" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.GoAw7tv" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="episode" type="service" id=".errored..service_locator.PqXbmwR.App\Entity\Episode"/>
+        <argument key="episode" type="service" id=".errored..service_locator.GoAw7tv.App\Entity\Episode"/>
+        <argument key="userRepository" type="service" id="App\Repository\UserRepository"/>
       </argument>
     </service>
     <service id=".service_locator.HJn6s9f" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -5191,7 +5204,13 @@
         <argument key="programRepository" type="service" id="App\Repository\ProgramRepository"/>
       </argument>
     </service>
-    <service id=".service_locator.hJvDSPY" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.PqXbmwR" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="episode" type="service" id=".errored..service_locator.PqXbmwR.App\Entity\Episode"/>
+      </argument>
+    </service>
+    <service id=".service_locator.8umtFfG" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\ActorController::delete" type="service" id=".service_locator.piwk0mf"/>
@@ -5207,7 +5226,7 @@
         <argument key="App\Controller\EpisodeController::edit" type="service" id=".service_locator.HJn6s9f"/>
         <argument key="App\Controller\EpisodeController::index" type="service" id=".service_locator.TlC5_Zq"/>
         <argument key="App\Controller\EpisodeController::new" type="service" id=".service_locator.cypIcSv"/>
-        <argument key="App\Controller\EpisodeController::show" type="service" id=".service_locator.PqXbmwR"/>
+        <argument key="App\Controller\EpisodeController::show" type="service" id=".service_locator.GoAw7tv"/>
         <argument key="App\Controller\ProgramController::delete" type="service" id=".service_locator.Ggk.SCy"/>
         <argument key="App\Controller\ProgramController::edit" type="service" id=".service_locator.Ggk.SCy"/>
         <argument key="App\Controller\ProgramController::index" type="service" id=".service_locator.58Rml10"/>
@@ -5237,7 +5256,7 @@
         <argument key="App\Controller\EpisodeController:edit" type="service" id=".service_locator.HJn6s9f"/>
         <argument key="App\Controller\EpisodeController:index" type="service" id=".service_locator.TlC5_Zq"/>
         <argument key="App\Controller\EpisodeController:new" type="service" id=".service_locator.cypIcSv"/>
-        <argument key="App\Controller\EpisodeController:show" type="service" id=".service_locator.PqXbmwR"/>
+        <argument key="App\Controller\EpisodeController:show" type="service" id=".service_locator.GoAw7tv"/>
         <argument key="App\Controller\ProgramController:delete" type="service" id=".service_locator.Ggk.SCy"/>
         <argument key="App\Controller\ProgramController:edit" type="service" id=".service_locator.Ggk.SCy"/>
         <argument key="App\Controller\ProgramController:index" type="service" id=".service_locator.58Rml10"/>
@@ -5352,8 +5371,8 @@
       <argument type="service" id="security.access.authenticated_voter"/>
       <argument type="service" id="debug.event_dispatcher"/>
     </service>
-    <service id="debug.security.voter.security.access.simple_role_voter" class="Symfony\Component\Security\Core\Authorization\Voter\TraceableVoter">
-      <argument type="service" id="security.access.simple_role_voter"/>
+    <service id="debug.security.voter.security.access.role_hierarchy_voter" class="Symfony\Component\Security\Core\Authorization\Voter\TraceableVoter">
+      <argument type="service" id="security.access.role_hierarchy_voter"/>
       <argument type="service" id="debug.event_dispatcher"/>
     </service>
     <service id="debug.security.voter.security.access.expression_voter" class="Symfony\Component\Security\Core\Authorization\Voter\TraceableVoter">
@@ -5677,7 +5696,7 @@
     <service id="debug.security.access.decision_manager.inner" class="Symfony\Component\Security\Core\Authorization\AccessDecisionManager" public="false">
       <argument type="iterator">
         <argument type="service" id="debug.security.voter.security.access.authenticated_voter"/>
-        <argument type="service" id="debug.security.voter.security.access.simple_role_voter"/>
+        <argument type="service" id="debug.security.voter.security.access.role_hierarchy_voter"/>
         <argument type="service" id="debug.security.voter.security.access.expression_voter"/>
       </argument>
       <argument>affirmative</argument>
@@ -5691,12 +5710,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.hJvDSPY"/>
+      <argument type="service" id=".service_locator.8umtFfG"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.hJvDSPY"/>
+      <argument type="service" id=".service_locator.8umtFfG"/>
     </service>
     <service id=".service_locator.UwRI0uT" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
@@ -5723,10 +5742,11 @@
     <service id=".errored..service_locator.K0SvH3w.App\Entity\Actor" class="App\Entity\Actor"/>
     <service id=".errored..service_locator.piwk0mf.App\Entity\Actor" class="App\Entity\Actor"/>
     <service id=".errored..service_locator.Gn3oxQ2.App\Entity\Comment" class="App\Entity\Comment"/>
-    <service id=".errored..service_locator.PqXbmwR.App\Entity\Episode" class="App\Entity\Episode"/>
+    <service id=".errored..service_locator.GoAw7tv.App\Entity\Episode" class="App\Entity\Episode"/>
     <service id=".errored..service_locator.HJn6s9f.App\Entity\Episode" class="App\Entity\Episode"/>
     <service id=".errored..service_locator.Ggk.SCy.App\Entity\Program" class="App\Entity\Program"/>
     <service id=".errored..service_locator.ADeF0mv.App\Entity\Season" class="App\Entity\Season"/>
+    <service id=".errored..service_locator.PqXbmwR.App\Entity\Episode" class="App\Entity\Episode"/>
     <service id="console.command_loader" class="Symfony\Component\Console\CommandLoader\ContainerCommandLoader" public="true">
       <argument type="service" id=".service_locator.JgKnBZT"/>
       <argument type="collection">
@@ -6089,7 +6109,7 @@
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger" public="false"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupCollectionInterface" alias="webpack_encore.entrypoint_lookup_collection" public="false"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.hJvDSPY"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.8umtFfG"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="validator" alias="debug.validator" public="true"/>

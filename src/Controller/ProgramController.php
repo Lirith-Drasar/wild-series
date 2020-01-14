@@ -52,30 +52,33 @@ class ProgramController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="program_show", methods={"GET"})
+     * @Route("/{slug}", name="program_show", methods={"GET"})
      */
     public function show(Program $program, Slugify $slugify): Response
     {
         $program->setSlug($slugify->generate($program->getTitle()));
+        $slug = $slugify->generate($program->getTitle());
+        $program->setSlug($slug); 
         return $this->render('program/show.html.twig', [
             'program' => $program,
         ]);
     }
 
     /**
-     * @Route("/{id}/edit", name="program_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="program_edit", methods={"GET","POST"})
      */
-    public function edit(Request $request, Program $program): Response
+    public function edit(Program $program, Request $request, Slugify $slugify): Response
     {
         $form = $this->createForm(ProgramType::class, $program);
-        $form->handleRequest($request);
-
+        $form->handleRequest($request);        
+        
         if ($form->isSubmitted() && $form->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
-
+            //Service Slugify
+            $slug = $slugify->generate($program->getTitle());
+            $program->setSlug($slug);            
+            $this->getDoctrine()->getManager()->flush();            
             return $this->redirectToRoute('program_index');
-        }
-
+        }        
         return $this->render('program/edit.html.twig', [
             'program' => $program,
             'form' => $form->createView(),
@@ -83,11 +86,13 @@ class ProgramController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="program_delete", methods={"DELETE"})
+     * @Route("/{slug}", name="program_delete", methods={"DELETE"})
      */
-    public function delete(Request $request, Program $program): Response
+    public function delete(Request $request, Program $program, Slugify $slugify): Response
     {
         if ($this->isCsrfTokenValid('delete'.$program->getId(), $request->request->get('_token'))) {
+            $slug = $slugify->generate($program->getTitle());
+            $program->setSlug($slug); 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($program);
             $entityManager->flush();

@@ -37,9 +37,7 @@ class ActorController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($actor);
-            $slugify = new Slugify();
             $actor->setSlug($slugify->generate($actor->getName()));
-            $actor->setUUID(Uuid::uuid4());
             $entityManager->flush();
 
             return $this->redirectToRoute('actor_index');
@@ -50,7 +48,7 @@ class ActorController extends AbstractController
         ]);
     }
     /**
-     * @Route("/{id}", name="actor_show", methods={"GET"})
+     * @Route("/{slug}", name="actor_show", methods={"GET"})
      */
     public function show(Actor $actor): Response
     {
@@ -59,7 +57,7 @@ class ActorController extends AbstractController
         ]);
     }
     /**
-     * @Route("/{id}/edit", name="actor_edit", methods={"GET","POST"})
+     * @Route("/{slug}/edit", name="actor_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Actor $actor, Slugify $slugify): Response
     {
@@ -67,7 +65,6 @@ class ActorController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $slugify = new Slugify();
             $actor->setSlug($slugify->generate($actor->getName()));
             $this->getDoctrine()->getManager()->flush();
 
@@ -80,11 +77,13 @@ class ActorController extends AbstractController
         ]);
     }
     /**
-     * @Route("/{id}", name="actor_delete", methods={"DELETE"})
+     * @Route("/{slug}", name="actor_delete", methods={"DELETE"})
      */
-    public function delete(Request $request, Actor $actor): Response
+    public function delete(Request $request, Actor $actor, Slugify $slugify): Response
     {
         if ($this->isCsrfTokenValid('delete'.$actor->getId(), $request->request->get('_token'))) {
+            $actor->setSlug($slugify->generate($actor->getName()));
+            $actor->setSlug($actor);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($actor);
             $entityManager->flush();

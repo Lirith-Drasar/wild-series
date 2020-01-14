@@ -113,7 +113,7 @@ class __TwigTemplate_e50085645202644e0adc61478088c99fb2ebafed658ada3ba51875f5cfd
 
     <a href=\"";
         // line 23
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 23, $this->source); })()), "id", [], "any", false, false, false, 23)]), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_edit", ["slug" => twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 23, $this->source); })()), "slug", [], "any", false, false, false, 23)]), "html", null, true);
         echo "\">edit</a>
 
     ";
@@ -168,7 +168,7 @@ class __TwigTemplate_e50085645202644e0adc61478088c99fb2ebafed658ada3ba51875f5cfd
 
     <a href=\"{{ path('actor_index') }}\">back to list</a>
 
-    <a href=\"{{ path('actor_edit', {'id': actor.id}) }}\">edit</a>
+    <a href=\"{{ path('actor_edit', {'slug': actor.slug}) }}\">edit</a>
 
     {{ include('actor/_delete_form.html.twig') }}
 {% endblock %}

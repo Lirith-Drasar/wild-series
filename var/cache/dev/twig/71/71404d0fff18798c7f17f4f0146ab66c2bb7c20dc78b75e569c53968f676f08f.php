@@ -115,11 +115,11 @@ class __TwigTemplate_7cb0928fbd00b3db64641215ce38e5c6b9f360f1258a01c8e0fb01c3cc7
                 <td>
                     <a href=\"";
             // line 22
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_show", ["id" => twig_get_attribute($this->env, $this->source, $context["actor"], "id", [], "any", false, false, false, 22)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_show", ["slug" => twig_get_attribute($this->env, $this->source, $context["actor"], "slug", [], "any", false, false, false, 22)]), "html", null, true);
             echo "\">show</a>
                     <a href=\"";
             // line 23
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["actor"], "id", [], "any", false, false, false, 23)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_edit", ["slug" => twig_get_attribute($this->env, $this->source, $context["actor"], "slug", [], "any", false, false, false, 23)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -191,8 +191,8 @@ class __TwigTemplate_7cb0928fbd00b3db64641215ce38e5c6b9f360f1258a01c8e0fb01c3cc7
                 <td>{{ actor.id }}</td>
                 <td>{{ actor.name }}</td>
                 <td>
-                    <a href=\"{{ path('actor_show', {'id': actor.id}) }}\">show</a>
-                    <a href=\"{{ path('actor_edit', {'id': actor.id}) }}\">edit</a>
+                    <a href=\"{{ path('actor_show', {'slug': actor.slug}) }}\">show</a>
+                    <a href=\"{{ path('actor_edit', {'slug': actor.slug}) }}\">edit</a>
                 </td>
             </tr>
         {% else %}

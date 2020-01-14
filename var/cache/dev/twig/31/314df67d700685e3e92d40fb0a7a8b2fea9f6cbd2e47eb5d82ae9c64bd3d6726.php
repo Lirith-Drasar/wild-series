@@ -97,7 +97,27 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
                 </div>
             </ul>
         </div>
-    </nav>
+        ";
+        // line 36
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 36, $this->source); })()), "user", [], "any", false, false, false, 36)) {
+            // line 37
+            echo "    ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 37, $this->source); })()), "user", [], "any", false, false, false, 37), "name", [], "any", false, false, false, 37), "html", null, true);
+            echo "
+    <a href=\"";
+            // line 38
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\"> Se déconnecter</a>
+";
+        } else {
+            // line 40
+            echo "    <a href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\"> Se connecter</a>
+";
+        }
+        // line 42
+        echo "    </nav>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -114,7 +134,7 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
 
     public function getDebugInfo()
     {
-        return array (  69 => 6,  63 => 2,  44 => 1,);
+        return array (  120 => 42,  114 => 40,  109 => 38,  104 => 37,  102 => 36,  69 => 6,  63 => 2,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -154,6 +174,12 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
                 </div>
             </ul>
         </div>
+        {% if app.user %}
+    {{ app.user.name }}
+    <a href=\"{{ path('app_logout') }}\"> Se déconnecter</a>
+{% else %}
+    <a href=\"{{ path('app_login') }}\"> Se connecter</a>
+{% endif %}
     </nav>
 {% endblock %}", "/wild/navbar.html.twig", "/home/lirith-drasar/Bureau/Projet/wild-series/templates/wild/navbar.html.twig");
     }
